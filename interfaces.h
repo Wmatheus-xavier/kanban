@@ -215,5 +215,76 @@ class UICartaoDeAtividade {
          */
         virtual void setCntrCartaoDeAtividade(IServicosCartaoDeAtividade* cntr) = 0;
 };
+/**
+ * @brief Interface dos serviços de projeto
+ *
+ * Especifica os serviços de projeto providos pela camada de serviço e usados pela camada de apresentação
+ */
+class IServicosProjetos {
+    public:
+        virtual ~IServicosProjetos() = default;
+
+        /**
+         * @brief Cria um projeto
+         * @param projeto Projeto a ser criado
+         * @retval true Projeto criado com sucesso
+         * @retval false Projeto já existe ou dados inconsistentes
+         */
+        virtual bool criar(const Projeto& projeto) = 0;
+
+        /**
+         * @brief Lê os dados de um projeto
+         * @param projeto Ponteiro para o projeto, que entra com o identificador e sai com os dados preenchidos
+         * @retval true Projeto encontrado
+         * @retval false Projeto não encontrado
+         */
+        virtual bool ler(Projeto* projeto) = 0;
+
+        /**
+         * @brief Atualiza os dados de um projeto
+         * @param projeto Projeto com o identificador do projeto existente e os novos dados
+         * @retval true Projeto atualizado com sucesso
+         * @retval false Projeto não encontrado ou dados inconsistentes
+         */
+        virtual bool atualizar(const Projeto& projeto) = 0;
+
+        /**
+         * @brief Exclui um projeto
+         * @param identificador Identificador do projeto a ser excluído
+         * @retval true Projeto excluído com sucesso
+         * @retval false Projeto não encontrado
+         */
+        virtual bool excluir(const Identificador& identificador) = 0;
+
+        /**
+         * @brief Lista os identificadores dos projetos cadastrados
+         * @retval true Listagem realizada com sucesso
+         * @retval false Falha na listagem
+         */
+        virtual bool listar() = 0;
+};
+
+/**
+ * @brief Interface da apresentação de projetos
+ *
+ * Especifica o serviço de interação com o usuário para projetos
+ */
+class IUProjetos {
+    public:
+        virtual ~IUProjetos() = default;
+
+        /**
+         * @brief Executa a interação com o usuário para projetos
+         * @retval true Interação concluída com sucesso
+         * @retval false Falha durante a interação
+         */
+        virtual bool executar() = 0;
+
+        /**
+         * @brief Define a controladora de serviços de projeto
+         * @param cntr Ponteiro para a controladora que realiza IServicosProjetos
+         */
+        virtual void setCntrServicosProjetos(IServicosProjetos* cntr) = 0;
+};
 
 #endif // KANBAN_INTERFACES_H
