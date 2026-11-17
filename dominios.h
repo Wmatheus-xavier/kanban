@@ -217,4 +217,77 @@ class Tamanho {
         string getTamanho() const;
 };
 
+/**
+ * @brief Domínio Email
+ *
+ * Formato válido: parte-local@domínio. A parte local pode conter letras minúsculas (a-z), dígitos (0-9), ponto e hífen; não pode iniciar nem terminar com ponto ou hífen, ponto ou hífen deve ser seguido por letra ou dígito e o comprimento máximo é 64 caracteres. O domínio é composto por uma ou mais partes separadas por ponto; cada parte pode conter letras minúsculas (a-z), dígitos (0-9) ou hífen, não pode iniciar nem terminar com hífen e o comprimento máximo do domínio é 255 caracteres
+ */
+class Email {
+    private:
+        string email;
+        static void validar(const string& email);
+    public:
+        /**
+         * @brief Define o valor do email
+         * @param email texto no formato válido
+         * @throws invalid_argument se o formato for inválido
+         */
+        void setEmail(const string& email);
+
+        /**
+         * @brief Obtém o valor do email
+         * @return texto com o valor armazenado
+         */
+        string getEmail() const;
+};
+
+/**
+ * @brief Domínio Senha
+ *
+ * Formato válido: 5 caracteres, sendo cada um letra (a-z ou A-Z) ou dígito (0-9), com pelo menos uma letra e pelo menos um dígito
+ */
+class Senha {
+    private:
+        string senha;
+        static void validar(const string& senha);
+    public:
+        /**
+         * @brief Define o valor da senha
+         * @param senha texto no formato válido
+         * @throws invalid_argument se o formato for inválido
+         */
+        void setSenha(const string& senha);
+
+        /**
+         * @brief Obtém o valor da senha
+         * @return texto com o valor armazenado
+         */
+        string getSenha() const;
+};
+
+/**
+ * @brief Domínio Papel
+ *
+ * Valores válidos: "GESTOR" ou "DESENVOLVEDOR"
+ */
+class Papel {
+    private:
+        inline static constexpr array<const char *, 2> OPCOES = { "GESTOR", "DESENVOLVEDOR" };
+        string papel;
+        static void validar(const string& papel);
+    public:
+        /**
+         * @brief Define o papel
+         * @param papel texto com um dos valores "GESTOR" ou "DESENVOLVEDOR"
+         * @throws invalid_argument se o valor não for uma das opções
+         */
+        void setPapel(const string& papel);
+
+        /**
+         * @brief Obtém o papel
+         * @return texto com o papel armazenado
+         */
+        string getPapel() const;
+};
+
 #endif // KANBAN_DOMINIOS_H
