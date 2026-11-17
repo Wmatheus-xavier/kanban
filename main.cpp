@@ -1,5 +1,9 @@
 #include <iostream>
 #include <ostream>
+#include "dominios.h"
+#include "entidades.h"
+#include "entidades.h"
+
 
 using namespace std;
 
