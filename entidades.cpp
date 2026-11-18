@@ -162,32 +162,52 @@ Timestamp CartaoDeAtividade::getEntrada() const {
 // Entidade: Pessoa
 // Atributos: email, nome, senha, papel
 // ------------------------------------------------------------
+<<<<<<< HEAD
 void Pessoa::setEmail(const Email& email) {
     this->email = email;
+=======
+void Pessoa::setEmail(const Email& e) {
+    email = e;
+>>>>>>> 03567cd (toda a minha parte e a dos mlk kk)
 }
 
 Email Pessoa::getEmail() const {
     return email;
 }
 
+<<<<<<< HEAD
 void Pessoa::setNome(const Nome& nome) {
     this->nome = nome;
+=======
+void Pessoa::setNome(const Nome& n) {
+    nome = n;
+>>>>>>> 03567cd (toda a minha parte e a dos mlk kk)
 }
 
 Nome Pessoa::getNome() const {
     return nome;
 }
 
+<<<<<<< HEAD
 void Pessoa::setSenha(const Senha& senha) {
     this->senha = senha;
+=======
+void Pessoa::setSenha(const Senha& s) {
+    senha = s;
+>>>>>>> 03567cd (toda a minha parte e a dos mlk kk)
 }
 
 Senha Pessoa::getSenha() const {
     return senha;
 }
 
+<<<<<<< HEAD
 void Pessoa::setPapel(const Papel& papel) {
     this->papel = papel;
+=======
+void Pessoa::setPapel(const Papel& p) {
+    papel = p;
+>>>>>>> 03567cd (toda a minha parte e a dos mlk kk)
 }
 
 Papel Pessoa::getPapel() const {

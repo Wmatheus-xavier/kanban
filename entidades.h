@@ -273,21 +273,37 @@ class CartaoDeAtividade {
 /**
  * @brief Entidade Pessoa
  *
+<<<<<<< HEAD
  * Representa um usuário do sistema, que pode ser gestor ou desenvolvedor. O email é a chave primária e, por isso, não deve ser alterado depois do cadastro
  *
  * Atributos: email; nome; senha; papel
  *
  * Métodos: setEmail e getEmail; setNome e getNome; setSenha e getSenha; setPapel e getPapel
+=======
+ * Representa um usuario do sistema. O email e a chave primaria.
+ *
+ * Atributos: email, nome, senha, papel
+ *
+ * Metodos: setEmail e getEmail; setNome e getNome; setSenha e getSenha; setPapel e getPapel
+>>>>>>> 03567cd (toda a minha parte e a dos mlk kk)
  */
 class Pessoa {
     private:
         Email email;
+<<<<<<< HEAD
         Nome nome;
+=======
+        Nome  nome;
+>>>>>>> 03567cd (toda a minha parte e a dos mlk kk)
         Senha senha;
         Papel papel;
     public:
         /**
+<<<<<<< HEAD
          * @brief Define o email da pessoa (chave primária)
+=======
+         * @brief Define o email da pessoa (chave primaria)
+>>>>>>> 03567cd (toda a minha parte e a dos mlk kk)
          * @param email Email da pessoa
          */
         void setEmail(const Email& email);
@@ -323,13 +339,22 @@ class Pessoa {
         Senha getSenha() const;
 
         /**
+<<<<<<< HEAD
          * @brief Define o papel da pessoa
          * @param papel Papel da pessoa (GESTOR ou DESENVOLVEDOR)
+=======
+         * @brief Define o papel da pessoa no sistema
+         * @param papel Papel (GESTOR ou DESENVOLVEDOR)
+>>>>>>> 03567cd (toda a minha parte e a dos mlk kk)
          */
         void setPapel(const Papel& papel);
 
         /**
+<<<<<<< HEAD
          * @brief Obtém o papel da pessoa
+=======
+         * @brief Obtém o papel da pessoa no sistema
+>>>>>>> 03567cd (toda a minha parte e a dos mlk kk)
          * @return Papel da pessoa
          */
         Papel getPapel() const;

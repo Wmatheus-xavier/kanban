@@ -1,0 +1,94 @@
+====================================================================
+  CHECKLIST DE COMPILACAO -- SISTEMA KANBAN TP1
+====================================================================
+
+Use esta lista antes de cada entrega para verificar que o projeto
+compila e executa corretamente nos dois ambientes alvo.
+
+--------------------------------------------------------------------
+1. PRE-REQUISITOS
+--------------------------------------------------------------------
+[ ] GCC >= 9  (ou MinGW-w64 >= 9 no Windows)
+    Verificar:  g++ --version
+[ ] Code::Blocks >= 20.03 instalado (abre kanban.cbp)
+[ ] (Opcional) Graphviz para gerar graficos no Doxygen
+
+--------------------------------------------------------------------
+2. COMPILACAO NA LINHA DE COMANDO (Linux / macOS)
+--------------------------------------------------------------------
+[ ] Abrir terminal na pasta raiz do projeto
+[ ] Executar o comando abaixo e confirmar saida sem erros:
+
+    g++ -std=c++17 -Wall -Wextra -o kanban \
+        dominios.cpp entidades.cpp utilitarios.cpp \
+        servicos_usuarios.cpp servicos_projetos.cpp \
+        servicos_quadros.cpp servicos_cartoes.cpp \
+        apresentacao_usuarios.cpp apresentacao_projetos.cpp \
+        apresentacao_quadros.cpp apresentacao_cartoes.cpp \
+        teste_fumaca.cpp main.cpp
+
+[ ] Nenhum warning de -Wall / -Wextra (exceto -Wno-unused-parameter
+    se a turma decidir suprimir)
+
+--------------------------------------------------------------------
+3. COMPILACAO NO CODE::BLOCKS
+--------------------------------------------------------------------
+[ ] Abrir kanban.cbp no Code::Blocks
+[ ] Verificar que todos os .cpp aparecem na arvore do projeto
+    (18 arquivos .cpp + 1 main.cpp)
+[ ] Build > Build (F9) -- sem erros
+[ ] Alvo "Release": Build > Set active target > Release; F9
+
+--------------------------------------------------------------------
+4. TESTE DE FUMACA (26 casos)
+--------------------------------------------------------------------
+[ ] Executar o binario e digitar "T" no menu inicial:
+      ./kanban        (Linux)
+      kanban.exe      (Windows)
+[ ] Confirmar saida:
+      Casos:  26  Passou: 26  Falhou: 0
+      RESULTADO: PASSED
+
+--------------------------------------------------------------------
+5. VERIFICACAO DE REGRAS DE NEGOCIO (manual)
+--------------------------------------------------------------------
+[ ] Criar conta com email invalido -- sistema rejeita (loop)
+[ ] Criar conta com senha fora do formato -- sistema rejeita (loop)
+[ ] Login com senha errada -- mensagem de falha, volta ao menu
+[ ] Gestor cria projeto; desenvolvedor nao ve opcao "Criar projeto"
+[ ] Excluir projeto com quadros -- mensagem de falha
+[ ] Excluir quadro com cartoes -- mensagem de falha
+[ ] Mover cartao com WIP >= limite -- mensagem de falha
+[ ] Mover cartao com timestamp anterior -- mensagem de falha
+[ ] Tempo de ciclo de cartao nao FEITO -- mensagem de falha
+
+--------------------------------------------------------------------
+6. DOCUMENTACAO DOXYGEN
+--------------------------------------------------------------------
+[ ] Aplicar alteracoes de doxyfile_changes.txt ao Doxyfile
+[ ] Executar: doxygen Doxyfile
+[ ] Abrir docs/html/index.html -- sem warnings de parametro faltando
+
+--------------------------------------------------------------------
+7. ENTREGA
+--------------------------------------------------------------------
+Arquivos obrigatorios na pasta raiz do projeto:
+[ ] dominios.h / dominios.cpp
+[ ] entidades.h / entidades.cpp
+[ ] utilitarios.h / utilitarios.cpp
+[ ] interfaces.h
+[ ] servicos_usuarios.h / servicos_usuarios.cpp
+[ ] servicos_projetos.h / servicos_projetos.cpp
+[ ] servicos_quadros.h / servicos_quadros.cpp
+[ ] servicos_cartoes.h / servicos_cartoes.cpp
+[ ] apresentacao_usuarios.h / apresentacao_usuarios.cpp
+[ ] apresentacao_projetos.h / apresentacao_projetos.cpp
+[ ] apresentacao_quadros.h / apresentacao_quadros.cpp
+[ ] apresentacao_cartoes.h / apresentacao_cartoes.cpp
+[ ] teste_fumaca.h / teste_fumaca.cpp
+[ ] main.cpp
+[ ] kanban.cbp
+[ ] Doxyfile  (com as alteracoes de doxyfile_changes.txt)
+[ ] README.txt
+
+====================================================================

@@ -1,0 +1,70 @@
+====================================================================
+  DOXYFILE -- ALTERACOES RECOMENDADAS PARA O PROJETO KANBAN
+====================================================================
+
+Arquivo base: Doxyfile gerado por "doxygen -g" (versao 1.9+)
+Aplique as linhas abaixo substituindo (ou acrescentando) as chaves
+correspondentes no Doxyfile existente.
+
+--------------------------------------------------------------------
+IDENTIFICACAO DO PROJETO
+--------------------------------------------------------------------
+PROJECT_NAME           = "Sistema Kanban TP1"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Gerenciador de tarefas Kanban em C++17"
+
+--------------------------------------------------------------------
+ENTRADA
+--------------------------------------------------------------------
+INPUT                  = .
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = NO
+EXCLUDE                = build cmake-build-debug .git .idea
+
+--------------------------------------------------------------------
+SAIDA
+--------------------------------------------------------------------
+OUTPUT_DIRECTORY       = docs
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HTML_OUTPUT            = html
+
+--------------------------------------------------------------------
+EXTRACAO
+--------------------------------------------------------------------
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+HIDE_UNDOC_MEMBERS     = NO
+
+--------------------------------------------------------------------
+GRAFICO DE DEPENDENCIAS (requer Graphviz instalado)
+--------------------------------------------------------------------
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+INCLUDE_GRAPH          = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+DOT_IMAGE_FORMAT       = svg
+
+--------------------------------------------------------------------
+WARNINGS
+--------------------------------------------------------------------
+WARN_IF_UNDOCUMENTED   = YES
+WARN_NO_PARAMDOC       = YES
+
+--------------------------------------------------------------------
+ENCODING
+--------------------------------------------------------------------
+DOXYFILE_ENCODING      = UTF-8
+INPUT_ENCODING         = UTF-8
+
+====================================================================
+COMO GERAR
+====================================================================
+  Linux/macOS:  doxygen Doxyfile
+  Windows:      doxywizard kanban.cbp  (ou doxygen Doxyfile no cmd)
+
+A documentacao sera gerada em  docs/html/index.html
+====================================================================

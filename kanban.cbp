@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+    <FileVersion major="1" minor="6" />
+    <Project>
+        <Option title="kanban" />
+        <Option pch_mode="2" />
+        <Option compiler="gcc" />
+        <Build>
+            <Target title="Debug">
+                <Option output="bin/Debug/kanban" prefix_auto="1" extension_auto="1" />
+                <Option object_output="obj/Debug/" />
+                <Option type="1" />
+                <Option compiler="gcc" />
+                <Compiler>
+                    <Add option="-g" />
+                    <Add option="-std=c++17" />
+                    <Add option="-Wall" />
+                    <Add option="-Wextra" />
+                </Compiler>
+            </Target>
+            <Target title="Release">
+                <Option output="bin/Release/kanban" prefix_auto="1" extension_auto="1" />
+                <Option object_output="obj/Release/" />
+                <Option type="1" />
+                <Option compiler="gcc" />
+                <Compiler>
+                    <Add option="-O2" />
+                    <Add option="-std=c++17" />
+                    <Add option="-Wall" />
+                    <Add option="-Wextra" />
+                </Compiler>
+            </Target>
+        </Build>
+        <Compiler>
+            <Add option="-std=c++17" />
+            <Add option="-Wall" />
+            <Add option="-Wextra" />
+        </Compiler>
+        <Unit filename="dominios.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="dominios.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="entidades.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="entidades.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="utilitarios.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="utilitarios.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="interfaces.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="servicos_usuarios.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="servicos_usuarios.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="servicos_projetos.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="servicos_projetos.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="servicos_quadros.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="servicos_quadros.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="servicos_cartoes.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="servicos_cartoes.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="apresentacao_usuarios.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="apresentacao_usuarios.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="apresentacao_projetos.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="apresentacao_projetos.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="apresentacao_quadros.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="apresentacao_quadros.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="apresentacao_cartoes.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="apresentacao_cartoes.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="teste_fumaca.h">
+            <Option compilerVar="CC" />
+        </Unit>
+        <Unit filename="teste_fumaca.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Unit filename="main.cpp">
+            <Option compilerVar="CPP" />
+        </Unit>
+        <Extensions>
+            <code_completion />
+            <envvars />
+            <debugger />
+        </Extensions>
+    </Project>
+</CodeBlocks_project_file>
