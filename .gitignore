@@ -19,4 +19,4 @@ Makefile
 # Binários compilados
 *.o
 *.out
-*.exe
+*.exedoxygen_avisos.txt
