@@ -20,3 +20,4 @@ Makefile
 *.o
 *.out
 *.exedoxygen_avisos.txt
+doxygen_avisos.txt
