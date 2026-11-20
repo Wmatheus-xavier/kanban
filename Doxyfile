@@ -7,9 +7,9 @@ INPUT_ENCODING         = UTF-8
 
 # Entrada
 INPUT                  = .
-RECURSIVE              = NO
+RECURSIVE              = YES
 FILE_PATTERNS          = *.cpp *.h
-EXCLUDE                = cmake-build-debug
+EXCLUDE                = build cmake-build-debug .git .idea docs
 
 # Extracao
 EXTRACT_ALL            = NO
@@ -20,6 +20,6 @@ WARN_LOGFILE           = doxygen_avisos.txt
 GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
 
-#Diagrama
+# Diagrama
 HAVE_DOT               = YES
-CLASS_GRAPH = YES
+CLASS_GRAPH            = YES
