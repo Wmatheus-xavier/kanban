@@ -15,18 +15,25 @@
  */
 
 #include <iostream>
-#include "servicos_usuarios.h"
-#include "servicos_projetos.h"
-#include "servicos_quadros.h"
-#include "servicos_cartoes.h"
-#include "apresentacao_usuarios.h"
-#include "apresentacao_projetos.h"
-#include "apresentacao_quadros.h"
-#include "apresentacao_cartoes.h"
-#include "teste_fumaca.h"
-#include "utilitarios.h"
+#include "servicos/servicos_usuarios.h"
+#include "servicos/servicos_projetos.h"
+#include "servicos/servicos_quadros.h"
+#include "servicos/servicos_cartoes.h"
+#include "apresentacao/apresentacao_usuarios.h"
+#include "apresentacao/apresentacao_projetos.h"
+#include "apresentacao/apresentacao_quadros.h"
+#include "apresentacao/apresentacao_cartoes.h"
+#include "teste/teste_fumaca.h"
+#include "utilitarios/utilitarios.h"
 
 using namespace std;
+/**
+ * @brief Função principal do sistema Kanban
+ *
+ * Instancia as camadas de serviço e de apresentação, conecta uma na outra
+ * e inicia a execução do sistema.
+ * @return 0 em caso de execução normal
+ */
 
 int main() {
     // -----------------------------------------------------------------------
