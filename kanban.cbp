@@ -35,80 +35,81 @@
             <Add option="-std=c++17" />
             <Add option="-Wall" />
             <Add option="-Wextra" />
+            <Add directory="." />
         </Compiler>
-        <Unit filename="dominios.h">
+        <Unit filename="dominio/dominios.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="dominios.cpp">
+        <Unit filename="dominio/dominios.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="entidades.h">
+        <Unit filename="entidades/entidades.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="entidades.cpp">
+        <Unit filename="entidades/entidades.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="utilitarios.h">
+        <Unit filename="utilitarios/utilitarios.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="utilitarios.cpp">
+        <Unit filename="utilitarios/utilitarios.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="interfaces.h">
+        <Unit filename="interfaces/interfaces.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="servicos_usuarios.h">
+        <Unit filename="servicos/servicos_usuarios.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="servicos_usuarios.cpp">
+        <Unit filename="servicos/servicos_usuarios.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="servicos_projetos.h">
+        <Unit filename="servicos/servicos_projetos.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="servicos_projetos.cpp">
+        <Unit filename="servicos/servicos_projetos.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="servicos_quadros.h">
+        <Unit filename="servicos/servicos_quadros.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="servicos_quadros.cpp">
+        <Unit filename="servicos/servicos_quadros.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="servicos_cartoes.h">
+        <Unit filename="servicos/servicos_cartoes.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="servicos_cartoes.cpp">
+        <Unit filename="servicos/servicos_cartoes.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="apresentacao_usuarios.h">
+        <Unit filename="apresentacao/apresentacao_usuarios.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="apresentacao_usuarios.cpp">
+        <Unit filename="apresentacao/apresentacao_usuarios.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="apresentacao_projetos.h">
+        <Unit filename="apresentacao/apresentacao_projetos.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="apresentacao_projetos.cpp">
+        <Unit filename="apresentacao/apresentacao_projetos.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="apresentacao_quadros.h">
+        <Unit filename="apresentacao/apresentacao_quadros.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="apresentacao_quadros.cpp">
+        <Unit filename="apresentacao/apresentacao_quadros.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="apresentacao_cartoes.h">
+        <Unit filename="apresentacao/apresentacao_cartoes.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="apresentacao_cartoes.cpp">
+        <Unit filename="apresentacao/apresentacao_cartoes.cpp">
             <Option compilerVar="CPP" />
         </Unit>
-        <Unit filename="teste_fumaca.h">
+        <Unit filename="teste/teste_fumaca.h">
             <Option compilerVar="CC" />
         </Unit>
-        <Unit filename="teste_fumaca.cpp">
+        <Unit filename="teste/teste_fumaca.cpp">
             <Option compilerVar="CPP" />
         </Unit>
         <Unit filename="main.cpp">
