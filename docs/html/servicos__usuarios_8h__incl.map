@@ -1,0 +1,21 @@
+<map id="servicos/servicos_usuarios.h" name="servicos/servicos_usuarios.h">
+<area shape="rect" id="Node000001" title="Declaracao do ContainerPessoas, CntrServicosAutenticacao e CntrServicosPessoas." alt="" coords="5,5,213,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="21,79,72,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,33,68,70,64,66,97,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="119,152,161,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,31,137,138,132,139,109,32"/>
+<area shape="rect" id="Node000004" href="$interfaces_8h.html" title="Declaracao das interfaces que conectam as camadas de servico e apresentacao." alt="" coords="147,79,315,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,28,201,69,198,74,127,33"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="218,106,167,145,164,141,214,102"/>
+<area shape="rect" id="Node000005" href="$dominios_8h.html" title="Declaração das classes de domínio do sistema Kanban." alt="" coords="199,225,350,251"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="233,104,235,137,243,176,261,213,256,215,237,178,229,138,228,105"/>
+<area shape="rect" id="Node000009" href="$entidades_8h.html" title="Declaração das classes de entidade do sistema Kanban." alt="" coords="253,152,419,177"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="249,102,309,142,306,147,246,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="164,299,223,324"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="263,253,219,292,215,288,260,249"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="247,299,303,324"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="277,251,277,285,272,285,272,251"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="327,299,414,324"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="292,249,345,288,342,292,289,253"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="328,179,296,217,292,213,324,176"/>
+</map>

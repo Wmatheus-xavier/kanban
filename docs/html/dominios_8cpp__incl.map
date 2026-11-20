@@ -1,0 +1,16 @@
+<map id="dominio/dominios.cpp" name="dominio/dominios.cpp">
+<area shape="rect" id="Node000001" title="Implementação das classes de dominios." alt="" coords="97,5,264,31"/>
+<area shape="rect" id="Node000002" href="$dominios_8h.html" title="Declaração das classes de domínio do sistema Kanban." alt="" coords="210,79,305,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,29,236,67,233,71,191,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="75,152,134,177"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="98,31,50,48,30,62,13,80,9,89,9,98,19,116,39,131,64,145,61,149,36,136,15,119,3,99,3,88,9,77,26,58,48,44,96,26"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="300,152,386,177"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="234,28,279,46,301,60,320,77,336,106,343,137,338,138,331,108,315,80,298,64,277,51,232,33"/>
+<area shape="rect" id="Node000006" href="$utilitarios_8h.html" title="Funcoes utilitarias do sistema Kanban." alt="" coords="23,79,186,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="170,33,128,71,125,67,166,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="234,106,143,149,140,144,232,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="219,152,275,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="258,105,253,139,248,138,253,104"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="273,102,320,141,317,145,270,106"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="107,104,107,138,102,138,102,104"/>
+</map>

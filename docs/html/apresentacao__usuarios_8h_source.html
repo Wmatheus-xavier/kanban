@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kanban: Código-Fonte de apresentacao/apresentacao_usuarios.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kanban
+   </div>
+   <div id="projectbrief">Sistema de apoio a gestao de projetos com o metodo Kanban</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_78015d4a88d21dcbe8c670230b613833.html">apresentacao</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">apresentacao_usuarios.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="apresentacao__usuarios_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef KANBAN_APRESENTACAO_USUARIOS_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define KANBAN_APRESENTACAO_USUARIOS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="interfaces_8h.html">interfaces/interfaces.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// CntrIUAutenticacao</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classCntrIUAutenticacao.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classCntrIUAutenticacao.html">CntrIUAutenticacao</a> : <span class="keyword">public</span> <a class="code hl_class" href="classIUAutenticacao.html">IUAutenticacao</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classIServicosAutenticacao.html">IServicosAutenticacao</a>* cntrServicos = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrIUAutenticacao.html#a70d4dcd61e438208a968179688a920fd">autenticar</a>(<a class="code hl_class" href="classEmail.html">Email</a>* email, <a class="code hl_class" href="classPapel.html">Papel</a>* papel) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classCntrIUAutenticacao.html#a23ffb4a3c1eec7add5b4ab5b879e8798">setCntrServicosAutenticacao</a>(<a class="code hl_class" href="classIServicosAutenticacao.html">IServicosAutenticacao</a>* cntr) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// CntrIUPessoas</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classCntrIUPessoas.html">   41</a></span><span class="keyword">class </span><a class="code hl_class" href="classCntrIUPessoas.html">CntrIUPessoas</a> : <span class="keyword">public</span> <a class="code hl_class" href="classIUPessoas.html">IUPessoas</a> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="classIServicosPessoas.html">IServicosPessoas</a>* cntrServicos = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">bool</span> criar(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; usuarioLogado);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">bool</span> ler(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; usuarioLogado, <span class="keyword">const</span> <a class="code hl_class" href="classPapel.html">Papel</a>&amp; papel);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">bool</span> atualizar(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; usuarioLogado, <span class="keyword">const</span> <a class="code hl_class" href="classPapel.html">Papel</a>&amp; papel);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">bool</span> excluir(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; usuarioLogado, <span class="keyword">const</span> <a class="code hl_class" href="classPapel.html">Papel</a>&amp; papel);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> listar();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrIUPessoas.html#ac314183ebda84a30bdbfec4b86842011">cadastrar</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrIUPessoas.html#aa8e1f768f5051ad0ed9bfb4df0cdb9b3">executar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; usuario, <span class="keyword">const</span> <a class="code hl_class" href="classPapel.html">Papel</a>&amp; papel) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classCntrIUPessoas.html#a5d4c05a0c4d701c40d695ab3856fd5cd">setCntrServicosPessoas</a>(<a class="code hl_class" href="classIServicosPessoas.html">IServicosPessoas</a>* cntr) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// KANBAN_APRESENTACAO_USUARIOS_H</span></div>
+<div class="ttc" id="aclassCntrIUAutenticacao_html"><div class="ttname"><a href="classCntrIUAutenticacao.html">CntrIUAutenticacao</a></div><div class="ttdoc">Controladora de interface de usuario para autenticacao.</div><div class="ttdef"><b>Definição</b> apresentacao_usuarios.h:23</div></div>
+<div class="ttc" id="aclassCntrIUAutenticacao_html_a23ffb4a3c1eec7add5b4ab5b879e8798"><div class="ttname"><a href="classCntrIUAutenticacao.html#a23ffb4a3c1eec7add5b4ab5b879e8798">CntrIUAutenticacao::setCntrServicosAutenticacao</a></div><div class="ttdeci">void setCntrServicosAutenticacao(IServicosAutenticacao *cntr) override</div><div class="ttdoc">Define a controladora de servicos de autenticacao.</div><div class="ttdef"><b>Definição</b> apresentacao_usuarios.cpp:87</div></div>
+<div class="ttc" id="aclassCntrIUAutenticacao_html_a70d4dcd61e438208a968179688a920fd"><div class="ttname"><a href="classCntrIUAutenticacao.html#a70d4dcd61e438208a968179688a920fd">CntrIUAutenticacao::autenticar</a></div><div class="ttdeci">bool autenticar(Email *email, Papel *papel) override</div><div class="ttdoc">Executa o fluxo de autenticacao.</div><div class="ttdef"><b>Definição</b> apresentacao_usuarios.cpp:91</div></div>
+<div class="ttc" id="aclassCntrIUPessoas_html"><div class="ttname"><a href="classCntrIUPessoas.html">CntrIUPessoas</a></div><div class="ttdoc">Controladora de interface de usuario para pessoas.</div><div class="ttdef"><b>Definição</b> apresentacao_usuarios.h:41</div></div>
+<div class="ttc" id="aclassCntrIUPessoas_html_a5d4c05a0c4d701c40d695ab3856fd5cd"><div class="ttname"><a href="classCntrIUPessoas.html#a5d4c05a0c4d701c40d695ab3856fd5cd">CntrIUPessoas::setCntrServicosPessoas</a></div><div class="ttdeci">void setCntrServicosPessoas(IServicosPessoas *cntr) override</div><div class="ttdoc">Define a controladora de servicos de pessoas.</div><div class="ttdef"><b>Definição</b> apresentacao_usuarios.cpp:110</div></div>
+<div class="ttc" id="aclassCntrIUPessoas_html_aa8e1f768f5051ad0ed9bfb4df0cdb9b3"><div class="ttname"><a href="classCntrIUPessoas.html#aa8e1f768f5051ad0ed9bfb4df0cdb9b3">CntrIUPessoas::executar</a></div><div class="ttdeci">bool executar(const Email &amp;usuario, const Papel &amp;papel) override</div><div class="ttdoc">Executa o menu de operacoes sobre pessoas.</div><div class="ttdef"><b>Definição</b> apresentacao_usuarios.cpp:213</div></div>
+<div class="ttc" id="aclassCntrIUPessoas_html_ac314183ebda84a30bdbfec4b86842011"><div class="ttname"><a href="classCntrIUPessoas.html#ac314183ebda84a30bdbfec4b86842011">CntrIUPessoas::cadastrar</a></div><div class="ttdeci">bool cadastrar() override</div><div class="ttdoc">Cria uma nova conta sem autenticacao previa.</div><div class="ttdef"><b>Definição</b> apresentacao_usuarios.cpp:114</div></div>
+<div class="ttc" id="aclassEmail_html"><div class="ttname"><a href="classEmail.html">Email</a></div><div class="ttdoc">Domínio Email.</div><div class="ttdef"><b>Definição</b> dominios.h:219</div></div>
+<div class="ttc" id="aclassIServicosAutenticacao_html"><div class="ttname"><a href="classIServicosAutenticacao.html">IServicosAutenticacao</a></div><div class="ttdoc">Interface dos servicos de autenticacao.</div><div class="ttdef"><b>Definição</b> interfaces.h:24</div></div>
+<div class="ttc" id="aclassIServicosPessoas_html"><div class="ttname"><a href="classIServicosPessoas.html">IServicosPessoas</a></div><div class="ttdoc">Interface dos servicos de pessoa.</div><div class="ttdef"><b>Definição</b> interfaces.h:73</div></div>
+<div class="ttc" id="aclassIUAutenticacao_html"><div class="ttname"><a href="classIUAutenticacao.html">IUAutenticacao</a></div><div class="ttdoc">Interface da apresentacao de autenticacao.</div><div class="ttdef"><b>Definição</b> interfaces.h:44</div></div>
+<div class="ttc" id="aclassIUPessoas_html"><div class="ttname"><a href="classIUPessoas.html">IUPessoas</a></div><div class="ttdoc">Interface da apresentacao de pessoas.</div><div class="ttdef"><b>Definição</b> interfaces.h:123</div></div>
+<div class="ttc" id="aclassPapel_html"><div class="ttname"><a href="classPapel.html">Papel</a></div><div class="ttdoc">Domínio Papel.</div><div class="ttdef"><b>Definição</b> dominios.h:267</div></div>
+<div class="ttc" id="ainterfaces_8h_html"><div class="ttname"><a href="interfaces_8h.html">interfaces.h</a></div><div class="ttdoc">Declaracao das interfaces que conectam as camadas de servico e apresentacao.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

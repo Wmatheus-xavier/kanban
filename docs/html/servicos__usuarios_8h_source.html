@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kanban: Código-Fonte de servicos/servicos_usuarios.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kanban
+   </div>
+   <div id="projectbrief">Sistema de apoio a gestao de projetos com o metodo Kanban</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_fa49581e8216608203c933f0c6512d3f.html">servicos</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">servicos_usuarios.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="servicos__usuarios_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef KANBAN_SERVICOS_USUARIOS_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define KANBAN_SERVICOS_USUARIOS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="interfaces_8h.html">interfaces/interfaces.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// ContainerPessoas</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classContainerPessoas.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classContainerPessoas.html">ContainerPessoas</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    map&lt;string, Pessoa&gt; dados; </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerPessoas.html#a9d2f0b7f5d9bb5e9e0cbae3818480453">incluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPessoa.html">Pessoa</a>&amp; pessoa);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerPessoas.html#ad1f84bce523e60a09fef38ee39d9ee47">pesquisar</a>(<a class="code hl_class" href="classPessoa.html">Pessoa</a>* pessoa) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerPessoas.html#a87566435345be623f5424c8263ae4afe">atualizar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPessoa.html">Pessoa</a>&amp; pessoa);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerPessoas.html#ae866ec516f3ddc5f43a408e463bbe4de">remover</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerPessoas.html#a8c9dd18a15f659f57ac2091d3a161af3">existe</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    list&lt;Email&gt; <a class="code hl_function" href="classContainerPessoas.html#a24d82007cb1bba1c2fe4b9b75687878e">listar</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// CntrServicosAutenticacao</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="};">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classCntrServicosAutenticacao.html">   94</a></span><span class="keyword">class </span><a class="code hl_class" href="classCntrServicosAutenticacao.html">CntrServicosAutenticacao</a> : <span class="keyword">public</span> <a class="code hl_class" href="classIServicosAutenticacao.html">IServicosAutenticacao</a> {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_class" href="classContainerPessoas.html">ContainerPessoas</a>* cntrPessoas; </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classCntrServicosAutenticacao.html">CntrServicosAutenticacao</a>(<a class="code hl_class" href="classContainerPessoas.html">ContainerPessoas</a>* cntrPessoas);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosAutenticacao.html#aab28fcdbd201c109ca053a1a5ca20893">autenticar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email, <span class="keyword">const</span> <a class="code hl_class" href="classSenha.html">Senha</a>&amp; senha, <a class="code hl_class" href="classPapel.html">Papel</a>* papel) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>};</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// CntrServicosPessoas</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="};">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classCntrServicosPessoas.html">  128</a></span><span class="keyword">class </span><a class="code hl_class" href="classCntrServicosPessoas.html">CntrServicosPessoas</a> : <span class="keyword">public</span> <a class="code hl_class" href="classIServicosPessoas.html">IServicosPessoas</a> {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_class" href="classContainerPessoas.html">ContainerPessoas</a>*        cntrPessoas;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keyword">class </span><a class="code hl_class" href="classContainerProjetos.html">ContainerProjetos</a>* cntrProjetos; </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">class </span><a class="code hl_class" href="classContainerCartoes.html">ContainerCartoes</a>*  cntrCartoes;  </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <a class="code hl_class" href="classCntrServicosPessoas.html">CntrServicosPessoas</a>(<a class="code hl_class" href="classContainerPessoas.html">ContainerPessoas</a>*  cntrPessoas,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                        <a class="code hl_class" href="classContainerProjetos.html">ContainerProjetos</a>* cntrProjetos,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                        <a class="code hl_class" href="classContainerCartoes.html">ContainerCartoes</a>*  cntrCartoes);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosPessoas.html#a3ef4cee555fb7ad1f99ca29dcee6365a">criar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPessoa.html">Pessoa</a>&amp; pessoa) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosPessoas.html#ab498a86650cd7c5a3652441cd54dbff3">ler</a>(<a class="code hl_class" href="classPessoa.html">Pessoa</a>* pessoa) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosPessoas.html#ae77d71209f6cc2df8a4ad39510286664">atualizar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPessoa.html">Pessoa</a>&amp; pessoa) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosPessoas.html#a80654ba26490047addd0d2047ea6a8b8">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosPessoas.html#aafc586a8a0791225db1fdff337ca3ba5">listar</a>(list&lt;Email&gt;* lista) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>};</div>
+</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#endif </span><span class="comment">// KANBAN_SERVICOS_USUARIOS_H</span></div>
+<div class="ttc" id="aclassCntrServicosAutenticacao_html"><div class="ttname"><a href="classCntrServicosAutenticacao.html">CntrServicosAutenticacao</a></div><div class="ttdoc">Controladora de servico de autenticacao.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.h:94</div></div>
+<div class="ttc" id="aclassCntrServicosAutenticacao_html_aab28fcdbd201c109ca053a1a5ca20893"><div class="ttname"><a href="classCntrServicosAutenticacao.html#aab28fcdbd201c109ca053a1a5ca20893">CntrServicosAutenticacao::autenticar</a></div><div class="ttdeci">bool autenticar(const Email &amp;email, const Senha &amp;senha, Papel *papel) override</div><div class="ttdoc">Autentica email e senha; em caso de sucesso preenche *papel.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:65</div></div>
+<div class="ttc" id="aclassCntrServicosPessoas_html"><div class="ttname"><a href="classCntrServicosPessoas.html">CntrServicosPessoas</a></div><div class="ttdoc">Controladora de servico de pessoas.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.h:128</div></div>
+<div class="ttc" id="aclassCntrServicosPessoas_html_a3ef4cee555fb7ad1f99ca29dcee6365a"><div class="ttname"><a href="classCntrServicosPessoas.html#a3ef4cee555fb7ad1f99ca29dcee6365a">CntrServicosPessoas::criar</a></div><div class="ttdeci">bool criar(const Pessoa &amp;pessoa) override</div><div class="ttdoc">Cadastra uma nova pessoa.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:85</div></div>
+<div class="ttc" id="aclassCntrServicosPessoas_html_a80654ba26490047addd0d2047ea6a8b8"><div class="ttname"><a href="classCntrServicosPessoas.html#a80654ba26490047addd0d2047ea6a8b8">CntrServicosPessoas::excluir</a></div><div class="ttdeci">bool excluir(const Email &amp;email) override</div><div class="ttdoc">Exclui uma pessoa; falha se ela tiver vinculos ativos.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:99</div></div>
+<div class="ttc" id="aclassCntrServicosPessoas_html_aafc586a8a0791225db1fdff337ca3ba5"><div class="ttname"><a href="classCntrServicosPessoas.html#aafc586a8a0791225db1fdff337ca3ba5">CntrServicosPessoas::listar</a></div><div class="ttdeci">bool listar(list&lt; Email &gt; *lista) override</div><div class="ttdoc">Lista os emails de todas as pessoas cadastradas.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:106</div></div>
+<div class="ttc" id="aclassCntrServicosPessoas_html_ab498a86650cd7c5a3652441cd54dbff3"><div class="ttname"><a href="classCntrServicosPessoas.html#ab498a86650cd7c5a3652441cd54dbff3">CntrServicosPessoas::ler</a></div><div class="ttdeci">bool ler(Pessoa *pessoa) override</div><div class="ttdoc">Le os dados de uma pessoa pelo email.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:89</div></div>
+<div class="ttc" id="aclassCntrServicosPessoas_html_ae77d71209f6cc2df8a4ad39510286664"><div class="ttname"><a href="classCntrServicosPessoas.html#ae77d71209f6cc2df8a4ad39510286664">CntrServicosPessoas::atualizar</a></div><div class="ttdeci">bool atualizar(const Pessoa &amp;pessoa) override</div><div class="ttdoc">Atualiza nome, senha e papel de uma pessoa; email nao e alterado.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:93</div></div>
+<div class="ttc" id="aclassContainerCartoes_html"><div class="ttname"><a href="classContainerCartoes.html">ContainerCartoes</a></div><div class="ttdoc">Repositorio de cartoes de atividade em memoria.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.h:29</div></div>
+<div class="ttc" id="aclassContainerPessoas_html"><div class="ttname"><a href="classContainerPessoas.html">ContainerPessoas</a></div><div class="ttdoc">Repositorio de pessoas em memoria.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.h:25</div></div>
+<div class="ttc" id="aclassContainerPessoas_html_a24d82007cb1bba1c2fe4b9b75687878e"><div class="ttname"><a href="classContainerPessoas.html#a24d82007cb1bba1c2fe4b9b75687878e">ContainerPessoas::listar</a></div><div class="ttdeci">list&lt; Email &gt; listar() const</div><div class="ttdoc">Retorna a lista de emails de todas as pessoas cadastradas.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:50</div></div>
+<div class="ttc" id="aclassContainerPessoas_html_a87566435345be623f5424c8263ae4afe"><div class="ttname"><a href="classContainerPessoas.html#a87566435345be623f5424c8263ae4afe">ContainerPessoas::atualizar</a></div><div class="ttdeci">bool atualizar(const Pessoa &amp;pessoa)</div><div class="ttdoc">Substitui os dados de uma pessoa existente pelo email.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:31</div></div>
+<div class="ttc" id="aclassContainerPessoas_html_a8c9dd18a15f659f57ac2091d3a161af3"><div class="ttname"><a href="classContainerPessoas.html#a8c9dd18a15f659f57ac2091d3a161af3">ContainerPessoas::existe</a></div><div class="ttdeci">bool existe(const Email &amp;email) const</div><div class="ttdoc">Verifica se existe uma pessoa com o email informado.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:46</div></div>
+<div class="ttc" id="aclassContainerPessoas_html_a9d2f0b7f5d9bb5e9e0cbae3818480453"><div class="ttname"><a href="classContainerPessoas.html#a9d2f0b7f5d9bb5e9e0cbae3818480453">ContainerPessoas::incluir</a></div><div class="ttdeci">bool incluir(const Pessoa &amp;pessoa)</div><div class="ttdoc">Inclui uma nova pessoa no repositorio.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:16</div></div>
+<div class="ttc" id="aclassContainerPessoas_html_ad1f84bce523e60a09fef38ee39d9ee47"><div class="ttname"><a href="classContainerPessoas.html#ad1f84bce523e60a09fef38ee39d9ee47">ContainerPessoas::pesquisar</a></div><div class="ttdeci">bool pesquisar(Pessoa *pessoa) const</div><div class="ttdoc">Pesquisa uma pessoa pelo email.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:23</div></div>
+<div class="ttc" id="aclassContainerPessoas_html_ae866ec516f3ddc5f43a408e463bbe4de"><div class="ttname"><a href="classContainerPessoas.html#ae866ec516f3ddc5f43a408e463bbe4de">ContainerPessoas::remover</a></div><div class="ttdeci">bool remover(const Email &amp;email)</div><div class="ttdoc">Remove uma pessoa pelo email.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.cpp:39</div></div>
+<div class="ttc" id="aclassContainerProjetos_html"><div class="ttname"><a href="classContainerProjetos.html">ContainerProjetos</a></div><div class="ttdoc">Repositorio de projetos em memoria.</div><div class="ttdef"><b>Definição</b> servicos_projetos.h:26</div></div>
+<div class="ttc" id="aclassEmail_html"><div class="ttname"><a href="classEmail.html">Email</a></div><div class="ttdoc">Domínio Email.</div><div class="ttdef"><b>Definição</b> dominios.h:219</div></div>
+<div class="ttc" id="aclassIServicosAutenticacao_html"><div class="ttname"><a href="classIServicosAutenticacao.html">IServicosAutenticacao</a></div><div class="ttdoc">Interface dos servicos de autenticacao.</div><div class="ttdef"><b>Definição</b> interfaces.h:24</div></div>
+<div class="ttc" id="aclassIServicosPessoas_html"><div class="ttname"><a href="classIServicosPessoas.html">IServicosPessoas</a></div><div class="ttdoc">Interface dos servicos de pessoa.</div><div class="ttdef"><b>Definição</b> interfaces.h:73</div></div>
+<div class="ttc" id="aclassPapel_html"><div class="ttname"><a href="classPapel.html">Papel</a></div><div class="ttdoc">Domínio Papel.</div><div class="ttdef"><b>Definição</b> dominios.h:267</div></div>
+<div class="ttc" id="aclassPessoa_html"><div class="ttname"><a href="classPessoa.html">Pessoa</a></div><div class="ttdoc">Entidade Pessoa.</div><div class="ttdef"><b>Definição</b> entidades.h:285</div></div>
+<div class="ttc" id="aclassSenha_html"><div class="ttname"><a href="classSenha.html">Senha</a></div><div class="ttdoc">Domínio Senha.</div><div class="ttdef"><b>Definição</b> dominios.h:243</div></div>
+<div class="ttc" id="ainterfaces_8h_html"><div class="ttname"><a href="interfaces_8h.html">interfaces.h</a></div><div class="ttdoc">Declaracao das interfaces que conectam as camadas de servico e apresentacao.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

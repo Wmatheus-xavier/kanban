@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kanban: Código-Fonte de interfaces/interfaces.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kanban
+   </div>
+   <div id="projectbrief">Sistema de apoio a gestao de projetos com o metodo Kanban</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ff6b5900125bb0123025c1cb24bdc726.html">interfaces</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">interfaces.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="interfaces_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef KANBAN_INTERFACES_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define KANBAN_INTERFACES_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="dominios_8h.html">dominio/dominios.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="entidades_8h.html">entidades/entidades.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// Autenticacao</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classIServicosAutenticacao.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classIServicosAutenticacao.html">IServicosAutenticacao</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIServicosAutenticacao.html">~IServicosAutenticacao</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classIServicosAutenticacao.html#a4e3485d00c0d86ae776175a9d5bbc9eb">   36</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosAutenticacao.html#a4e3485d00c0d86ae776175a9d5bbc9eb">autenticar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email, <span class="keyword">const</span> <a class="code hl_class" href="classSenha.html">Senha</a>&amp; senha, <a class="code hl_class" href="classPapel.html">Papel</a>* papel) = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classIUAutenticacao.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classIUAutenticacao.html">IUAutenticacao</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIUAutenticacao.html">~IUAutenticacao</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classIUAutenticacao.html#ad03e4297ea17537ddbdfa8cdf35259f6">   55</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIUAutenticacao.html#ad03e4297ea17537ddbdfa8cdf35259f6">autenticar</a>(<a class="code hl_class" href="classEmail.html">Email</a>* email, <a class="code hl_class" href="classPapel.html">Papel</a>* papel) = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classIUAutenticacao.html#af71d212d92933c8255d6182c50fc4a99">   61</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classIUAutenticacao.html#af71d212d92933c8255d6182c50fc4a99">setCntrServicosAutenticacao</a>(<a class="code hl_class" href="classIServicosAutenticacao.html">IServicosAutenticacao</a>* cntr) = 0;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// Pessoas</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="};">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classIServicosPessoas.html">   73</a></span><span class="keyword">class </span><a class="code hl_class" href="classIServicosPessoas.html">IServicosPessoas</a> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIServicosPessoas.html">~IServicosPessoas</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classIServicosPessoas.html#a5071698bde101feeb1f8790c8ef404d4">   83</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosPessoas.html#a5071698bde101feeb1f8790c8ef404d4">criar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPessoa.html">Pessoa</a>&amp; pessoa) = 0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classIServicosPessoas.html#aea4733c0abeed7b4d4c8283011660220">   91</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosPessoas.html#aea4733c0abeed7b4d4c8283011660220">ler</a>(<a class="code hl_class" href="classPessoa.html">Pessoa</a>* pessoa) = 0;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classIServicosPessoas.html#a1d188a6c64aa8e261f7c618984ed36fb">   99</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosPessoas.html#a1d188a6c64aa8e261f7c618984ed36fb">atualizar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPessoa.html">Pessoa</a>&amp; pessoa) = 0;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classIServicosPessoas.html#aafa7140dfd5eb19f1eac4b4faaad71cc">  107</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosPessoas.html#aafa7140dfd5eb19f1eac4b4faaad71cc">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email) = 0;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classIServicosPessoas.html#a097ae8ec064187f1077d8cee6c87c2da">  115</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosPessoas.html#a097ae8ec064187f1077d8cee6c87c2da">listar</a>(list&lt;Email&gt;* lista) = 0;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>};</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00123" data-start="{" data-end="};">
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classIUPessoas.html">  123</a></span><span class="keyword">class </span><a class="code hl_class" href="classIUPessoas.html">IUPessoas</a> {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIUPessoas.html">~IUPessoas</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classIUPessoas.html#a723e439721cc78e1a677d8f596f82a75">  132</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIUPessoas.html#a723e439721cc78e1a677d8f596f82a75">cadastrar</a>() = 0;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classIUPessoas.html#a1546def3a2918a400107744908b65d54">  141</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIUPessoas.html#a1546def3a2918a400107744908b65d54">executar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; usuario, <span class="keyword">const</span> <a class="code hl_class" href="classPapel.html">Papel</a>&amp; papel) = 0;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="classIUPessoas.html#a623bfe976eac6fc29645a14b267fe81a">  147</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classIUPessoas.html#a623bfe976eac6fc29645a14b267fe81a">setCntrServicosPessoas</a>(<a class="code hl_class" href="classIServicosPessoas.html">IServicosPessoas</a>* cntr) = 0;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>};</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">// Projetos</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="};">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classIServicosProjetos.html">  159</a></span><span class="keyword">class </span><a class="code hl_class" href="classIServicosProjetos.html">IServicosProjetos</a> {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIServicosProjetos.html">~IServicosProjetos</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classIServicosProjetos.html#a8aaa994e54d4c14264eb5dc1641d0797">  170</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosProjetos.html#a8aaa994e54d4c14264eb5dc1641d0797">criar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classProjeto.html">Projeto</a>&amp; projeto, <span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; gestor) = 0;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classIServicosProjetos.html#a6e6929de8033278884525090cfc8f619">  178</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosProjetos.html#a6e6929de8033278884525090cfc8f619">ler</a>(<a class="code hl_class" href="classProjeto.html">Projeto</a>* projeto) = 0;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classIServicosProjetos.html#a26ea85e8b2863ec1345fb859671d3cd7">  186</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosProjetos.html#a26ea85e8b2863ec1345fb859671d3cd7">atualizar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classProjeto.html">Projeto</a>&amp; projeto) = 0;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="classIServicosProjetos.html#a69998bdf00a97d946d4d0395aeadbb39">  194</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosProjetos.html#a69998bdf00a97d946d4d0395aeadbb39">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; identificador) = 0;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="classIServicosProjetos.html#a27c73cb9c6b02405f2a9d5b7848e78b7">  202</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosProjetos.html#a27c73cb9c6b02405f2a9d5b7848e78b7">listar</a>(list&lt;Identificador&gt;* lista) = 0;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>};</div>
+</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="foldopen" id="foldopen00210" data-start="{" data-end="};">
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classIUProjetos.html">  210</a></span><span class="keyword">class </span><a class="code hl_class" href="classIUProjetos.html">IUProjetos</a> {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIUProjetos.html">~IUProjetos</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="classIUProjetos.html#a7fa9b148b8e94edd4cac70c779e3b8c8">  221</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIUProjetos.html#a7fa9b148b8e94edd4cac70c779e3b8c8">executar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email, <span class="keyword">const</span> <a class="code hl_class" href="classPapel.html">Papel</a>&amp; papel) = 0;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classIUProjetos.html#a71824820a8594d5ca5ee45e0afad2798">  227</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classIUProjetos.html#a71824820a8594d5ca5ee45e0afad2798">setCntrServicosProjetos</a>(<a class="code hl_class" href="classIServicosProjetos.html">IServicosProjetos</a>* cntr) = 0;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>};</div>
+</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">// Quadros</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="foldopen" id="foldopen00239" data-start="{" data-end="};">
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="classIServicosQuadros.html">  239</a></span><span class="keyword">class </span><a class="code hl_class" href="classIServicosQuadros.html">IServicosQuadros</a> {</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIServicosQuadros.html">~IServicosQuadros</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="classIServicosQuadros.html#afc5cf14883caaf400e4cdcc5d13b5829">  250</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosQuadros.html#afc5cf14883caaf400e4cdcc5d13b5829">criar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classQuadro.html">Quadro</a>&amp; quadro, <span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; projeto) = 0;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="classIServicosQuadros.html#a2c517e9c4ea05281c68ba85ac94b0682">  258</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosQuadros.html#a2c517e9c4ea05281c68ba85ac94b0682">ler</a>(<a class="code hl_class" href="classQuadro.html">Quadro</a>* quadro) = 0;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="classIServicosQuadros.html#afe038d0a1eb7b32299d93f7b31e4462b">  266</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosQuadros.html#afe038d0a1eb7b32299d93f7b31e4462b">atualizar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classQuadro.html">Quadro</a>&amp; quadro) = 0;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classIServicosQuadros.html#a4462784f8ce67be17257036b1c2ecbc6">  274</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosQuadros.html#a4462784f8ce67be17257036b1c2ecbc6">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; identificador) = 0;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="classIServicosQuadros.html#ad668915efb8334e991f894e1813c9e36">  282</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosQuadros.html#ad668915efb8334e991f894e1813c9e36">listar</a>(list&lt;Identificador&gt;* lista) = 0;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>};</div>
+</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="foldopen" id="foldopen00290" data-start="{" data-end="};">
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="classIUQuadros.html">  290</a></span><span class="keyword">class </span><a class="code hl_class" href="classIUQuadros.html">IUQuadros</a> {</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIUQuadros.html">~IUQuadros</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="classIUQuadros.html#a57bea39428106de43402feae05790e31">  301</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIUQuadros.html#a57bea39428106de43402feae05790e31">executar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email, <span class="keyword">const</span> <a class="code hl_class" href="classPapel.html">Papel</a>&amp; papel) = 0;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="classIUQuadros.html#a9ed0eb146f242688cde6226a3a34366b">  307</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classIUQuadros.html#a9ed0eb146f242688cde6226a3a34366b">setCntrServicosQuadros</a>(<a class="code hl_class" href="classIServicosQuadros.html">IServicosQuadros</a>* cntr) = 0;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>};</div>
+</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">// Cartoes de Atividade</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">// ---------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="foldopen" id="foldopen00319" data-start="{" data-end="};">
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html">  319</a></span><span class="keyword">class </span><a class="code hl_class" href="classIServicosCartaoDeAtividade.html">IServicosCartaoDeAtividade</a> {</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIServicosCartaoDeAtividade.html">~IServicosCartaoDeAtividade</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#a93ca917af4dafc970b059311f6763cfe">  331</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#a93ca917af4dafc970b059311f6763cfe">criar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>&amp; cartao, <span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro,</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                       <span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; desenvolvedor) = 0;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#a04b28c616dc6002f6859289e926ef912">  340</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#a04b28c616dc6002f6859289e926ef912">ler</a>(<a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>* cartao) = 0;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#a72a82469c80947aef03de129d85070f8">  348</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#a72a82469c80947aef03de129d85070f8">atualizar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>&amp; cartao) = 0;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#a30fb4b6aa0bdf932deabd05fec98dbda">  356</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#a30fb4b6aa0bdf932deabd05fec98dbda">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; identificador) = 0;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#ad7e8537a1cec0438b9984dcfea3420bb">  364</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#ad7e8537a1cec0438b9984dcfea3420bb">listar</a>(list&lt;Identificador&gt;* lista) = 0;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#af802fb155b7074734a81c1b8e5548f25">  378</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#af802fb155b7074734a81c1b8e5548f25">mover</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; cartao, <span class="keyword">const</span> <a class="code hl_class" href="classEstado.html">Estado</a>&amp; destino,</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                       <span class="keyword">const</span> <a class="code hl_class" href="classTimestamp.html">Timestamp</a>&amp; momento) = 0;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#a10abf6efd95f2dfba0f010c7a3089fe0">  388</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#a10abf6efd95f2dfba0f010c7a3089fe0">lerTempoCiclo</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; cartao, <span class="keywordtype">double</span>&amp; minutos) = 0;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#a96e1f29fa3261400e373f55b6ae51a4a">  397</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#a96e1f29fa3261400e373f55b6ae51a4a">lerTempoCicloMedio</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro, <span class="keywordtype">double</span>&amp; minutos) = 0;</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#ad26dfb727ac3a97d32db0b033b33e270">  406</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#ad26dfb727ac3a97d32db0b033b33e270">lerLeadTime</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; cartao, <span class="keywordtype">double</span>&amp; minutos) = 0;</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#ac02a7ac9715c8ad2cf5968bd8c54a44c">  415</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#ac02a7ac9715c8ad2cf5968bd8c54a44c">lerLeadTimeMedio</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro, <span class="keywordtype">double</span>&amp; minutos) = 0;</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno"><a class="line" href="classIServicosCartaoDeAtividade.html#a0d346e9daa6dbf3ac889c2352f28d7fa">  424</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIServicosCartaoDeAtividade.html#a0d346e9daa6dbf3ac889c2352f28d7fa">lerWip</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro, <span class="keywordtype">int</span>&amp; wip) = 0;</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>};</div>
+</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
+<div class="foldopen" id="foldopen00432" data-start="{" data-end="};">
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno"><a class="line" href="classIUCartaoDeAtividade.html">  432</a></span><span class="keyword">class </span><a class="code hl_class" href="classIUCartaoDeAtividade.html">IUCartaoDeAtividade</a> {</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classIUCartaoDeAtividade.html">~IUCartaoDeAtividade</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno"><a class="line" href="classIUCartaoDeAtividade.html#a387d5aed859047d830c4283c2615ab6f">  443</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classIUCartaoDeAtividade.html#a387d5aed859047d830c4283c2615ab6f">executar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email, <span class="keyword">const</span> <a class="code hl_class" href="classPapel.html">Papel</a>&amp; papel) = 0;</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno"><a class="line" href="classIUCartaoDeAtividade.html#a13e99fe73a755de177e3c7ed3aa53180">  449</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classIUCartaoDeAtividade.html#a13e99fe73a755de177e3c7ed3aa53180">setCntrServicosCartaoDeAtividade</a>(<a class="code hl_class" href="classIServicosCartaoDeAtividade.html">IServicosCartaoDeAtividade</a>* cntr) = 0;</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>};</div>
+</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="preprocessor">#endif </span><span class="comment">// KANBAN_INTERFACES_H</span></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html"><div class="ttname"><a href="classCartaoDeAtividade.html">CartaoDeAtividade</a></div><div class="ttdoc">Entidade Cartão de Atividade.</div><div class="ttdef"><b>Definição</b> entidades.h:155</div></div>
+<div class="ttc" id="aclassEmail_html"><div class="ttname"><a href="classEmail.html">Email</a></div><div class="ttdoc">Domínio Email.</div><div class="ttdef"><b>Definição</b> dominios.h:219</div></div>
+<div class="ttc" id="aclassEstado_html"><div class="ttname"><a href="classEstado.html">Estado</a></div><div class="ttdoc">Domínio Estado.</div><div class="ttdef"><b>Definição</b> dominios.h:169</div></div>
+<div class="ttc" id="aclassIServicosAutenticacao_html"><div class="ttname"><a href="classIServicosAutenticacao.html">IServicosAutenticacao</a></div><div class="ttdoc">Interface dos servicos de autenticacao.</div><div class="ttdef"><b>Definição</b> interfaces.h:24</div></div>
+<div class="ttc" id="aclassIServicosAutenticacao_html_a4e3485d00c0d86ae776175a9d5bbc9eb"><div class="ttname"><a href="classIServicosAutenticacao.html#a4e3485d00c0d86ae776175a9d5bbc9eb">IServicosAutenticacao::autenticar</a></div><div class="ttdeci">virtual bool autenticar(const Email &amp;email, const Senha &amp;senha, Papel *papel)=0</div><div class="ttdoc">Autentica um usuario pelo email e senha.</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html">IServicosCartaoDeAtividade</a></div><div class="ttdoc">Interface dos servicos de cartao de atividade.</div><div class="ttdef"><b>Definição</b> interfaces.h:319</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_a04b28c616dc6002f6859289e926ef912"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#a04b28c616dc6002f6859289e926ef912">IServicosCartaoDeAtividade::ler</a></div><div class="ttdeci">virtual bool ler(CartaoDeAtividade *cartao)=0</div><div class="ttdoc">Le os dados de um cartao.</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_a0d346e9daa6dbf3ac889c2352f28d7fa"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#a0d346e9daa6dbf3ac889c2352f28d7fa">IServicosCartaoDeAtividade::lerWip</a></div><div class="ttdeci">virtual bool lerWip(const Identificador &amp;quadro, int &amp;wip)=0</div><div class="ttdoc">Le o WIP (work in progress) de um quadro.</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_a10abf6efd95f2dfba0f010c7a3089fe0"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#a10abf6efd95f2dfba0f010c7a3089fe0">IServicosCartaoDeAtividade::lerTempoCiclo</a></div><div class="ttdeci">virtual bool lerTempoCiclo(const Identificador &amp;cartao, double &amp;minutos)=0</div><div class="ttdoc">Le o tempo de ciclo de um cartao (termino - inicio, em minutos)</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_a30fb4b6aa0bdf932deabd05fec98dbda"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#a30fb4b6aa0bdf932deabd05fec98dbda">IServicosCartaoDeAtividade::excluir</a></div><div class="ttdeci">virtual bool excluir(const Identificador &amp;identificador)=0</div><div class="ttdoc">Exclui um cartao.</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_a72a82469c80947aef03de129d85070f8"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#a72a82469c80947aef03de129d85070f8">IServicosCartaoDeAtividade::atualizar</a></div><div class="ttdeci">virtual bool atualizar(const CartaoDeAtividade &amp;cartao)=0</div><div class="ttdoc">Atualiza nome, descricao, prioridade e tamanho do cartao.</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_a93ca917af4dafc970b059311f6763cfe"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#a93ca917af4dafc970b059311f6763cfe">IServicosCartaoDeAtividade::criar</a></div><div class="ttdeci">virtual bool criar(const CartaoDeAtividade &amp;cartao, const Identificador &amp;quadro, const Email &amp;desenvolvedor)=0</div><div class="ttdoc">Cria um novo cartao vinculado a um quadro e a um desenvolvedor.</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_a96e1f29fa3261400e373f55b6ae51a4a"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#a96e1f29fa3261400e373f55b6ae51a4a">IServicosCartaoDeAtividade::lerTempoCicloMedio</a></div><div class="ttdeci">virtual bool lerTempoCicloMedio(const Identificador &amp;quadro, double &amp;minutos)=0</div><div class="ttdoc">Le o tempo de ciclo medio dos cartoes FEITO de um quadro.</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_ac02a7ac9715c8ad2cf5968bd8c54a44c"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#ac02a7ac9715c8ad2cf5968bd8c54a44c">IServicosCartaoDeAtividade::lerLeadTimeMedio</a></div><div class="ttdeci">virtual bool lerLeadTimeMedio(const Identificador &amp;quadro, double &amp;minutos)=0</div><div class="ttdoc">Le o lead time medio dos cartoes FEITO de um quadro.</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_ad26dfb727ac3a97d32db0b033b33e270"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#ad26dfb727ac3a97d32db0b033b33e270">IServicosCartaoDeAtividade::lerLeadTime</a></div><div class="ttdeci">virtual bool lerLeadTime(const Identificador &amp;cartao, double &amp;minutos)=0</div><div class="ttdoc">Le o lead time de um cartao (termino - entrada, em minutos)</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_ad7e8537a1cec0438b9984dcfea3420bb"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#ad7e8537a1cec0438b9984dcfea3420bb">IServicosCartaoDeAtividade::listar</a></div><div class="ttdeci">virtual bool listar(list&lt; Identificador &gt; *lista)=0</div><div class="ttdoc">Lista os identificadores de todos os cartoes cadastrados.</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html_af802fb155b7074734a81c1b8e5548f25"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html#af802fb155b7074734a81c1b8e5548f25">IServicosCartaoDeAtividade::mover</a></div><div class="ttdeci">virtual bool mover(const Identificador &amp;cartao, const Estado &amp;destino, const Timestamp &amp;momento)=0</div><div class="ttdoc">Move um cartao para o proximo estado.</div></div>
+<div class="ttc" id="aclassIServicosPessoas_html"><div class="ttname"><a href="classIServicosPessoas.html">IServicosPessoas</a></div><div class="ttdoc">Interface dos servicos de pessoa.</div><div class="ttdef"><b>Definição</b> interfaces.h:73</div></div>
+<div class="ttc" id="aclassIServicosPessoas_html_a097ae8ec064187f1077d8cee6c87c2da"><div class="ttname"><a href="classIServicosPessoas.html#a097ae8ec064187f1077d8cee6c87c2da">IServicosPessoas::listar</a></div><div class="ttdeci">virtual bool listar(list&lt; Email &gt; *lista)=0</div><div class="ttdoc">Lista os emails de todas as pessoas cadastradas.</div></div>
+<div class="ttc" id="aclassIServicosPessoas_html_a1d188a6c64aa8e261f7c618984ed36fb"><div class="ttname"><a href="classIServicosPessoas.html#a1d188a6c64aa8e261f7c618984ed36fb">IServicosPessoas::atualizar</a></div><div class="ttdeci">virtual bool atualizar(const Pessoa &amp;pessoa)=0</div><div class="ttdoc">Atualiza os dados de uma pessoa.</div></div>
+<div class="ttc" id="aclassIServicosPessoas_html_a5071698bde101feeb1f8790c8ef404d4"><div class="ttname"><a href="classIServicosPessoas.html#a5071698bde101feeb1f8790c8ef404d4">IServicosPessoas::criar</a></div><div class="ttdeci">virtual bool criar(const Pessoa &amp;pessoa)=0</div><div class="ttdoc">Cadastra uma nova pessoa.</div></div>
+<div class="ttc" id="aclassIServicosPessoas_html_aafa7140dfd5eb19f1eac4b4faaad71cc"><div class="ttname"><a href="classIServicosPessoas.html#aafa7140dfd5eb19f1eac4b4faaad71cc">IServicosPessoas::excluir</a></div><div class="ttdeci">virtual bool excluir(const Email &amp;email)=0</div><div class="ttdoc">Exclui uma pessoa.</div></div>
+<div class="ttc" id="aclassIServicosPessoas_html_aea4733c0abeed7b4d4c8283011660220"><div class="ttname"><a href="classIServicosPessoas.html#aea4733c0abeed7b4d4c8283011660220">IServicosPessoas::ler</a></div><div class="ttdeci">virtual bool ler(Pessoa *pessoa)=0</div><div class="ttdoc">Le os dados de uma pessoa.</div></div>
+<div class="ttc" id="aclassIServicosProjetos_html"><div class="ttname"><a href="classIServicosProjetos.html">IServicosProjetos</a></div><div class="ttdoc">Interface dos servicos de projeto.</div><div class="ttdef"><b>Definição</b> interfaces.h:159</div></div>
+<div class="ttc" id="aclassIServicosProjetos_html_a26ea85e8b2863ec1345fb859671d3cd7"><div class="ttname"><a href="classIServicosProjetos.html#a26ea85e8b2863ec1345fb859671d3cd7">IServicosProjetos::atualizar</a></div><div class="ttdeci">virtual bool atualizar(const Projeto &amp;projeto)=0</div><div class="ttdoc">Atualiza os dados de um projeto.</div></div>
+<div class="ttc" id="aclassIServicosProjetos_html_a27c73cb9c6b02405f2a9d5b7848e78b7"><div class="ttname"><a href="classIServicosProjetos.html#a27c73cb9c6b02405f2a9d5b7848e78b7">IServicosProjetos::listar</a></div><div class="ttdeci">virtual bool listar(list&lt; Identificador &gt; *lista)=0</div><div class="ttdoc">Lista os identificadores de todos os projetos cadastrados.</div></div>
+<div class="ttc" id="aclassIServicosProjetos_html_a69998bdf00a97d946d4d0395aeadbb39"><div class="ttname"><a href="classIServicosProjetos.html#a69998bdf00a97d946d4d0395aeadbb39">IServicosProjetos::excluir</a></div><div class="ttdeci">virtual bool excluir(const Identificador &amp;identificador)=0</div><div class="ttdoc">Exclui um projeto.</div></div>
+<div class="ttc" id="aclassIServicosProjetos_html_a6e6929de8033278884525090cfc8f619"><div class="ttname"><a href="classIServicosProjetos.html#a6e6929de8033278884525090cfc8f619">IServicosProjetos::ler</a></div><div class="ttdeci">virtual bool ler(Projeto *projeto)=0</div><div class="ttdoc">Le os dados de um projeto.</div></div>
+<div class="ttc" id="aclassIServicosProjetos_html_a8aaa994e54d4c14264eb5dc1641d0797"><div class="ttname"><a href="classIServicosProjetos.html#a8aaa994e54d4c14264eb5dc1641d0797">IServicosProjetos::criar</a></div><div class="ttdeci">virtual bool criar(const Projeto &amp;projeto, const Email &amp;gestor)=0</div><div class="ttdoc">Cria um novo projeto.</div></div>
+<div class="ttc" id="aclassIServicosQuadros_html"><div class="ttname"><a href="classIServicosQuadros.html">IServicosQuadros</a></div><div class="ttdoc">Interface dos servicos de quadro.</div><div class="ttdef"><b>Definição</b> interfaces.h:239</div></div>
+<div class="ttc" id="aclassIServicosQuadros_html_a2c517e9c4ea05281c68ba85ac94b0682"><div class="ttname"><a href="classIServicosQuadros.html#a2c517e9c4ea05281c68ba85ac94b0682">IServicosQuadros::ler</a></div><div class="ttdeci">virtual bool ler(Quadro *quadro)=0</div><div class="ttdoc">Le os dados de um quadro.</div></div>
+<div class="ttc" id="aclassIServicosQuadros_html_a4462784f8ce67be17257036b1c2ecbc6"><div class="ttname"><a href="classIServicosQuadros.html#a4462784f8ce67be17257036b1c2ecbc6">IServicosQuadros::excluir</a></div><div class="ttdeci">virtual bool excluir(const Identificador &amp;identificador)=0</div><div class="ttdoc">Exclui um quadro.</div></div>
+<div class="ttc" id="aclassIServicosQuadros_html_ad668915efb8334e991f894e1813c9e36"><div class="ttname"><a href="classIServicosQuadros.html#ad668915efb8334e991f894e1813c9e36">IServicosQuadros::listar</a></div><div class="ttdeci">virtual bool listar(list&lt; Identificador &gt; *lista)=0</div><div class="ttdoc">Lista os identificadores de todos os quadros cadastrados.</div></div>
+<div class="ttc" id="aclassIServicosQuadros_html_afc5cf14883caaf400e4cdcc5d13b5829"><div class="ttname"><a href="classIServicosQuadros.html#afc5cf14883caaf400e4cdcc5d13b5829">IServicosQuadros::criar</a></div><div class="ttdeci">virtual bool criar(const Quadro &amp;quadro, const Identificador &amp;projeto)=0</div><div class="ttdoc">Cria um novo quadro vinculado a um projeto.</div></div>
+<div class="ttc" id="aclassIServicosQuadros_html_afe038d0a1eb7b32299d93f7b31e4462b"><div class="ttname"><a href="classIServicosQuadros.html#afe038d0a1eb7b32299d93f7b31e4462b">IServicosQuadros::atualizar</a></div><div class="ttdeci">virtual bool atualizar(const Quadro &amp;quadro)=0</div><div class="ttdoc">Atualiza os dados de um quadro.</div></div>
+<div class="ttc" id="aclassIUAutenticacao_html"><div class="ttname"><a href="classIUAutenticacao.html">IUAutenticacao</a></div><div class="ttdoc">Interface da apresentacao de autenticacao.</div><div class="ttdef"><b>Definição</b> interfaces.h:44</div></div>
+<div class="ttc" id="aclassIUAutenticacao_html_ad03e4297ea17537ddbdfa8cdf35259f6"><div class="ttname"><a href="classIUAutenticacao.html#ad03e4297ea17537ddbdfa8cdf35259f6">IUAutenticacao::autenticar</a></div><div class="ttdeci">virtual bool autenticar(Email *email, Papel *papel)=0</div><div class="ttdoc">Executa o fluxo de autenticacao.</div></div>
+<div class="ttc" id="aclassIUAutenticacao_html_af71d212d92933c8255d6182c50fc4a99"><div class="ttname"><a href="classIUAutenticacao.html#af71d212d92933c8255d6182c50fc4a99">IUAutenticacao::setCntrServicosAutenticacao</a></div><div class="ttdeci">virtual void setCntrServicosAutenticacao(IServicosAutenticacao *cntr)=0</div><div class="ttdoc">Define a controladora de servicos de autenticacao.</div></div>
+<div class="ttc" id="aclassIUCartaoDeAtividade_html"><div class="ttname"><a href="classIUCartaoDeAtividade.html">IUCartaoDeAtividade</a></div><div class="ttdoc">Interface da apresentacao de cartoes de atividade.</div><div class="ttdef"><b>Definição</b> interfaces.h:432</div></div>
+<div class="ttc" id="aclassIUCartaoDeAtividade_html_a13e99fe73a755de177e3c7ed3aa53180"><div class="ttname"><a href="classIUCartaoDeAtividade.html#a13e99fe73a755de177e3c7ed3aa53180">IUCartaoDeAtividade::setCntrServicosCartaoDeAtividade</a></div><div class="ttdeci">virtual void setCntrServicosCartaoDeAtividade(IServicosCartaoDeAtividade *cntr)=0</div><div class="ttdoc">Define a controladora de servicos de cartoes.</div></div>
+<div class="ttc" id="aclassIUCartaoDeAtividade_html_a387d5aed859047d830c4283c2615ab6f"><div class="ttname"><a href="classIUCartaoDeAtividade.html#a387d5aed859047d830c4283c2615ab6f">IUCartaoDeAtividade::executar</a></div><div class="ttdeci">virtual bool executar(const Email &amp;email, const Papel &amp;papel)=0</div><div class="ttdoc">Executa o menu de operacoes sobre cartoes.</div></div>
+<div class="ttc" id="aclassIUPessoas_html"><div class="ttname"><a href="classIUPessoas.html">IUPessoas</a></div><div class="ttdoc">Interface da apresentacao de pessoas.</div><div class="ttdef"><b>Definição</b> interfaces.h:123</div></div>
+<div class="ttc" id="aclassIUPessoas_html_a1546def3a2918a400107744908b65d54"><div class="ttname"><a href="classIUPessoas.html#a1546def3a2918a400107744908b65d54">IUPessoas::executar</a></div><div class="ttdeci">virtual bool executar(const Email &amp;usuario, const Papel &amp;papel)=0</div><div class="ttdoc">Executa o menu de operacoes sobre pessoas.</div></div>
+<div class="ttc" id="aclassIUPessoas_html_a623bfe976eac6fc29645a14b267fe81a"><div class="ttname"><a href="classIUPessoas.html#a623bfe976eac6fc29645a14b267fe81a">IUPessoas::setCntrServicosPessoas</a></div><div class="ttdeci">virtual void setCntrServicosPessoas(IServicosPessoas *cntr)=0</div><div class="ttdoc">Define a controladora de servicos de pessoas.</div></div>
+<div class="ttc" id="aclassIUPessoas_html_a723e439721cc78e1a677d8f596f82a75"><div class="ttname"><a href="classIUPessoas.html#a723e439721cc78e1a677d8f596f82a75">IUPessoas::cadastrar</a></div><div class="ttdeci">virtual bool cadastrar()=0</div><div class="ttdoc">Cria uma nova conta sem autenticacao previa.</div></div>
+<div class="ttc" id="aclassIUProjetos_html"><div class="ttname"><a href="classIUProjetos.html">IUProjetos</a></div><div class="ttdoc">Interface da apresentacao de projetos.</div><div class="ttdef"><b>Definição</b> interfaces.h:210</div></div>
+<div class="ttc" id="aclassIUProjetos_html_a71824820a8594d5ca5ee45e0afad2798"><div class="ttname"><a href="classIUProjetos.html#a71824820a8594d5ca5ee45e0afad2798">IUProjetos::setCntrServicosProjetos</a></div><div class="ttdeci">virtual void setCntrServicosProjetos(IServicosProjetos *cntr)=0</div><div class="ttdoc">Define a controladora de servicos de projetos.</div></div>
+<div class="ttc" id="aclassIUProjetos_html_a7fa9b148b8e94edd4cac70c779e3b8c8"><div class="ttname"><a href="classIUProjetos.html#a7fa9b148b8e94edd4cac70c779e3b8c8">IUProjetos::executar</a></div><div class="ttdeci">virtual bool executar(const Email &amp;email, const Papel &amp;papel)=0</div><div class="ttdoc">Executa o menu de operacoes sobre projetos.</div></div>
+<div class="ttc" id="aclassIUQuadros_html"><div class="ttname"><a href="classIUQuadros.html">IUQuadros</a></div><div class="ttdoc">Interface da apresentacao de quadros.</div><div class="ttdef"><b>Definição</b> interfaces.h:290</div></div>
+<div class="ttc" id="aclassIUQuadros_html_a57bea39428106de43402feae05790e31"><div class="ttname"><a href="classIUQuadros.html#a57bea39428106de43402feae05790e31">IUQuadros::executar</a></div><div class="ttdeci">virtual bool executar(const Email &amp;email, const Papel &amp;papel)=0</div><div class="ttdoc">Executa o menu de operacoes sobre quadros.</div></div>
+<div class="ttc" id="aclassIUQuadros_html_a9ed0eb146f242688cde6226a3a34366b"><div class="ttname"><a href="classIUQuadros.html#a9ed0eb146f242688cde6226a3a34366b">IUQuadros::setCntrServicosQuadros</a></div><div class="ttdeci">virtual void setCntrServicosQuadros(IServicosQuadros *cntr)=0</div><div class="ttdoc">Define a controladora de servicos de quadros.</div></div>
+<div class="ttc" id="aclassIdentificador_html"><div class="ttname"><a href="classIdentificador.html">Identificador</a></div><div class="ttdoc">Domínio Identificador.</div><div class="ttdef"><b>Definição</b> dominios.h:20</div></div>
+<div class="ttc" id="aclassPapel_html"><div class="ttname"><a href="classPapel.html">Papel</a></div><div class="ttdoc">Domínio Papel.</div><div class="ttdef"><b>Definição</b> dominios.h:267</div></div>
+<div class="ttc" id="aclassPessoa_html"><div class="ttname"><a href="classPessoa.html">Pessoa</a></div><div class="ttdoc">Entidade Pessoa.</div><div class="ttdef"><b>Definição</b> entidades.h:285</div></div>
+<div class="ttc" id="aclassProjeto_html"><div class="ttname"><a href="classProjeto.html">Projeto</a></div><div class="ttdoc">Entidade Projeto.</div><div class="ttdef"><b>Definição</b> entidades.h:25</div></div>
+<div class="ttc" id="aclassQuadro_html"><div class="ttname"><a href="classQuadro.html">Quadro</a></div><div class="ttdoc">Entidade Quadro.</div><div class="ttdef"><b>Definição</b> entidades.h:103</div></div>
+<div class="ttc" id="aclassSenha_html"><div class="ttname"><a href="classSenha.html">Senha</a></div><div class="ttdoc">Domínio Senha.</div><div class="ttdef"><b>Definição</b> dominios.h:243</div></div>
+<div class="ttc" id="aclassTimestamp_html"><div class="ttname"><a href="classTimestamp.html">Timestamp</a></div><div class="ttdoc">Domínio Timestamp.</div><div class="ttdef"><b>Definição</b> dominios.h:94</div></div>
+<div class="ttc" id="adominios_8h_html"><div class="ttname"><a href="dominios_8h.html">dominios.h</a></div><div class="ttdoc">Declaração das classes de domínio do sistema Kanban.</div></div>
+<div class="ttc" id="aentidades_8h_html"><div class="ttname"><a href="entidades_8h.html">entidades.h</a></div><div class="ttdoc">Declaração das classes de entidade do sistema Kanban.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kanban: Código-Fonte de servicos/servicos_cartoes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kanban
+   </div>
+   <div id="projectbrief">Sistema de apoio a gestao de projetos com o metodo Kanban</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_fa49581e8216608203c933f0c6512d3f.html">servicos</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">servicos_cartoes.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="servicos__cartoes_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef KANBAN_SERVICOS_CARTOES_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define KANBAN_SERVICOS_CARTOES_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="interfaces_8h.html">interfaces/interfaces.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// ContainerCartoes</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classContainerCartoes.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="classContainerCartoes.html">ContainerCartoes</a> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    map&lt;string, CartaoDeAtividade&gt; dados;          </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    map&lt;string, string&gt;            quadros;         </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    map&lt;string, string&gt;            desenvolvedores; </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerCartoes.html#a7131ad7f5361d596eba4c47bd4530e58">incluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>&amp; cartao, <span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                 <span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; desenvolvedor);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerCartoes.html#a6e632e2ff62fd8936de31e277f419de1">pesquisar</a>(<a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>* cartao) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerCartoes.html#a3f0b8b24a4835ee04be479a30acd6b4a">pesquisarQuadro</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; cartao, <a class="code hl_class" href="classIdentificador.html">Identificador</a>* quadro) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerCartoes.html#a6a6a9bd67c9bb0f29bdc16dd1aaed1a0">atualizar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>&amp; cartao);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerCartoes.html#aac1f501d325cc2cd8bf49eed56363788">atualizarCompleto</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>&amp; cartao);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerCartoes.html#ada83f3cb0d338cc20f1797fd378c6adc">remover</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; identificador);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerCartoes.html#a394cea9703dfcc7cfaf8680f780e49df">existe</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; identificador) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    list&lt;Identificador&gt; <a class="code hl_function" href="classContainerCartoes.html#af5ff5a05bbfb286636bf4db557b7d94b">listar</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    list&lt;CartaoDeAtividade&gt; <a class="code hl_function" href="classContainerCartoes.html#a86547e85a7be16b5a29c7f8fecc04eb2">listarPorQuadro</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerCartoes.html#a835085a17367ec02714c760a531e6c25">quadroTemCartoes</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classContainerCartoes.html#a919156bcb2e13ebad1139bce5856aa29">desenvolvedorTemCartoes</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>};</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">// CntrServicosCartaoDeAtividade</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">// ===========================================================================</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="foldopen" id="foldopen00166" data-start="{" data-end="};">
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classCntrServicosCartaoDeAtividade.html">  166</a></span><span class="keyword">class </span><a class="code hl_class" href="classCntrServicosCartaoDeAtividade.html">CntrServicosCartaoDeAtividade</a> : <span class="keyword">public</span> <a class="code hl_class" href="classIServicosCartaoDeAtividade.html">IServicosCartaoDeAtividade</a> {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <a class="code hl_class" href="classContainerCartoes.html">ContainerCartoes</a>*        cntrCartoes;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keyword">class </span><a class="code hl_class" href="classContainerQuadros.html">ContainerQuadros</a>*  cntrQuadros; </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">class </span><a class="code hl_class" href="classContainerPessoas.html">ContainerPessoas</a>*  cntrPessoas; </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <a class="code hl_class" href="classCntrServicosCartaoDeAtividade.html">CntrServicosCartaoDeAtividade</a>(<a class="code hl_class" href="classContainerCartoes.html">ContainerCartoes</a>* cntrCartoes,</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                                  <a class="code hl_class" href="classContainerQuadros.html">ContainerQuadros</a>* cntrQuadros,</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                                  <a class="code hl_class" href="classContainerPessoas.html">ContainerPessoas</a>* cntrPessoas);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#a521d16c6b6027ee97df75a231fe1f210">criar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>&amp; cartao, <span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro,</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>               <span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; desenvolvedor) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#ac5b4e0f470e8bda6ef99c3ae481d0943">ler</a>(<a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>* cartao) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#abcdac340582813e26db062ea9b48b594">atualizar</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a>&amp; cartao) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#a63495c4cf4b9c2b2f779c6d8dea5c3f5">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; identificador) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#a3ac6ffc974d8f058cd8585ff9c2a8761">listar</a>(list&lt;Identificador&gt;* lista) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#acd590ea8be266de2222f6dd880a3ae7d">mover</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; cartao, <span class="keyword">const</span> <a class="code hl_class" href="classEstado.html">Estado</a>&amp; destino,</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>               <span class="keyword">const</span> <a class="code hl_class" href="classTimestamp.html">Timestamp</a>&amp; momento) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#a44a2eebb29bede44b2862871feb6ad43">lerTempoCiclo</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; cartao, <span class="keywordtype">double</span>&amp; minutos) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#a120713a21df3ad6bce1630fdd95ce501">lerTempoCicloMedio</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro, <span class="keywordtype">double</span>&amp; minutos) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#a93fde8184bb4222e8738a7d52ba0ffc2">lerLeadTime</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; cartao, <span class="keywordtype">double</span>&amp; minutos) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#a0b8bdf6327ddc917f6639c23700df2ac">lerLeadTimeMedio</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro, <span class="keywordtype">double</span>&amp; minutos) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCntrServicosCartaoDeAtividade.html#a9e011e951c7ccf48af24a6670b38b5bb">lerWip</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; quadro, <span class="keywordtype">int</span>&amp; wip) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>};</div>
+</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="preprocessor">#endif </span><span class="comment">// KANBAN_SERVICOS_CARTOES_H</span></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html"><div class="ttname"><a href="classCartaoDeAtividade.html">CartaoDeAtividade</a></div><div class="ttdoc">Entidade Cartão de Atividade.</div><div class="ttdef"><b>Definição</b> entidades.h:155</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html">CntrServicosCartaoDeAtividade</a></div><div class="ttdoc">Controladora de servico de cartao de atividade.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.h:166</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_a0b8bdf6327ddc917f6639c23700df2ac"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#a0b8bdf6327ddc917f6639c23700df2ac">CntrServicosCartaoDeAtividade::lerLeadTimeMedio</a></div><div class="ttdeci">bool lerLeadTimeMedio(const Identificador &amp;quadro, double &amp;minutos) override</div><div class="ttdoc">Calcula o lead time medio dos cartoes FEITO de um quadro em minutos.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:239</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_a120713a21df3ad6bce1630fdd95ce501"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#a120713a21df3ad6bce1630fdd95ce501">CntrServicosCartaoDeAtividade::lerTempoCicloMedio</a></div><div class="ttdeci">bool lerTempoCicloMedio(const Identificador &amp;quadro, double &amp;minutos) override</div><div class="ttdoc">Calcula o tempo de ciclo medio dos cartoes FEITO de um quadro em minutos.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:210</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_a3ac6ffc974d8f058cd8585ff9c2a8761"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#a3ac6ffc974d8f058cd8585ff9c2a8761">CntrServicosCartaoDeAtividade::listar</a></div><div class="ttdeci">bool listar(list&lt; Identificador &gt; *lista) override</div><div class="ttdoc">Lista os identificadores de todos os cartoes cadastrados.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:147</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_a44a2eebb29bede44b2862871feb6ad43"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#a44a2eebb29bede44b2862871feb6ad43">CntrServicosCartaoDeAtividade::lerTempoCiclo</a></div><div class="ttdeci">bool lerTempoCiclo(const Identificador &amp;cartao, double &amp;minutos) override</div><div class="ttdoc">Calcula o tempo de ciclo de um cartao em minutos.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:199</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_a521d16c6b6027ee97df75a231fe1f210"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#a521d16c6b6027ee97df75a231fe1f210">CntrServicosCartaoDeAtividade::criar</a></div><div class="ttdeci">bool criar(const CartaoDeAtividade &amp;cartao, const Identificador &amp;quadro, const Email &amp;desenvolvedor) override</div><div class="ttdoc">Cria um cartao; exige quadro e desenvolvedor existentes e estado A FAZER.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:125</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_a63495c4cf4b9c2b2f779c6d8dea5c3f5"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#a63495c4cf4b9c2b2f779c6d8dea5c3f5">CntrServicosCartaoDeAtividade::excluir</a></div><div class="ttdeci">bool excluir(const Identificador &amp;identificador) override</div><div class="ttdoc">Exclui um cartao.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:143</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_a93fde8184bb4222e8738a7d52ba0ffc2"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#a93fde8184bb4222e8738a7d52ba0ffc2">CntrServicosCartaoDeAtividade::lerLeadTime</a></div><div class="ttdeci">bool lerLeadTime(const Identificador &amp;cartao, double &amp;minutos) override</div><div class="ttdoc">Calcula o lead time de um cartao em minutos.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:228</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_a9e011e951c7ccf48af24a6670b38b5bb"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#a9e011e951c7ccf48af24a6670b38b5bb">CntrServicosCartaoDeAtividade::lerWip</a></div><div class="ttdeci">bool lerWip(const Identificador &amp;quadro, int &amp;wip) override</div><div class="ttdoc">Le o WIP (work in progress) atual de um quadro.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:257</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_abcdac340582813e26db062ea9b48b594"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#abcdac340582813e26db062ea9b48b594">CntrServicosCartaoDeAtividade::atualizar</a></div><div class="ttdeci">bool atualizar(const CartaoDeAtividade &amp;cartao) override</div><div class="ttdoc">Atualiza nome, descricao, prioridade e tamanho; preserva o restante.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:138</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_ac5b4e0f470e8bda6ef99c3ae481d0943"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#ac5b4e0f470e8bda6ef99c3ae481d0943">CntrServicosCartaoDeAtividade::ler</a></div><div class="ttdeci">bool ler(CartaoDeAtividade *cartao) override</div><div class="ttdoc">Le os dados de um cartao pelo identificador.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:134</div></div>
+<div class="ttc" id="aclassCntrServicosCartaoDeAtividade_html_acd590ea8be266de2222f6dd880a3ae7d"><div class="ttname"><a href="classCntrServicosCartaoDeAtividade.html#acd590ea8be266de2222f6dd880a3ae7d">CntrServicosCartaoDeAtividade::mover</a></div><div class="ttdeci">bool mover(const Identificador &amp;cartao, const Estado &amp;destino, const Timestamp &amp;momento) override</div><div class="ttdoc">Move um cartao para o proximo estado, gravando o timestamp correto.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:152</div></div>
+<div class="ttc" id="aclassContainerCartoes_html"><div class="ttname"><a href="classContainerCartoes.html">ContainerCartoes</a></div><div class="ttdoc">Repositorio de cartoes de atividade em memoria.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.h:29</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_a394cea9703dfcc7cfaf8680f780e49df"><div class="ttname"><a href="classContainerCartoes.html#a394cea9703dfcc7cfaf8680f780e49df">ContainerCartoes::existe</a></div><div class="ttdeci">bool existe(const Identificador &amp;identificador) const</div><div class="ttdoc">Verifica se existe um cartao com o identificador informado.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:77</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_a3f0b8b24a4835ee04be479a30acd6b4a"><div class="ttname"><a href="classContainerCartoes.html#a3f0b8b24a4835ee04be479a30acd6b4a">ContainerCartoes::pesquisarQuadro</a></div><div class="ttdeci">bool pesquisarQuadro(const Identificador &amp;cartao, Identificador *quadro) const</div><div class="ttdoc">Pesquisa o quadro ao qual um cartao pertence.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:35</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_a6a6a9bd67c9bb0f29bdc16dd1aaed1a0"><div class="ttname"><a href="classContainerCartoes.html#a6a6a9bd67c9bb0f29bdc16dd1aaed1a0">ContainerCartoes::atualizar</a></div><div class="ttdeci">bool atualizar(const CartaoDeAtividade &amp;cartao)</div><div class="ttdoc">Atualiza nome, descricao, prioridade e tamanho; preserva o restante.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:44</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_a6e632e2ff62fd8936de31e277f419de1"><div class="ttname"><a href="classContainerCartoes.html#a6e632e2ff62fd8936de31e277f419de1">ContainerCartoes::pesquisar</a></div><div class="ttdeci">bool pesquisar(CartaoDeAtividade *cartao) const</div><div class="ttdoc">Pesquisa um cartao pelo identificador.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:27</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_a7131ad7f5361d596eba4c47bd4530e58"><div class="ttname"><a href="classContainerCartoes.html#a7131ad7f5361d596eba4c47bd4530e58">ContainerCartoes::incluir</a></div><div class="ttdeci">bool incluir(const CartaoDeAtividade &amp;cartao, const Identificador &amp;quadro, const Email &amp;desenvolvedor)</div><div class="ttdoc">Inclui um cartao associando-o a um quadro e a um desenvolvedor.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:17</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_a835085a17367ec02714c760a531e6c25"><div class="ttname"><a href="classContainerCartoes.html#a835085a17367ec02714c760a531e6c25">ContainerCartoes::quadroTemCartoes</a></div><div class="ttdeci">bool quadroTemCartoes(const Identificador &amp;quadro) const</div><div class="ttdoc">Verifica se um quadro tem ao menos um cartao vinculado.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:102</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_a86547e85a7be16b5a29c7f8fecc04eb2"><div class="ttname"><a href="classContainerCartoes.html#a86547e85a7be16b5a29c7f8fecc04eb2">ContainerCartoes::listarPorQuadro</a></div><div class="ttdeci">list&lt; CartaoDeAtividade &gt; listarPorQuadro(const Identificador &amp;quadro) const</div><div class="ttdoc">Retorna todos os cartoes pertencentes a um quadro.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:89</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_a919156bcb2e13ebad1139bce5856aa29"><div class="ttname"><a href="classContainerCartoes.html#a919156bcb2e13ebad1139bce5856aa29">ContainerCartoes::desenvolvedorTemCartoes</a></div><div class="ttdeci">bool desenvolvedorTemCartoes(const Email &amp;email) const</div><div class="ttdoc">Verifica se um desenvolvedor tem ao menos um cartao vinculado.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:109</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_aac1f501d325cc2cd8bf49eed56363788"><div class="ttname"><a href="classContainerCartoes.html#aac1f501d325cc2cd8bf49eed56363788">ContainerCartoes::atualizarCompleto</a></div><div class="ttdeci">bool atualizarCompleto(const CartaoDeAtividade &amp;cartao)</div><div class="ttdoc">Substitui o objeto completo preservando as relacoes (quadro, desenvolvedor)</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:58</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_ada83f3cb0d338cc20f1797fd378c6adc"><div class="ttname"><a href="classContainerCartoes.html#ada83f3cb0d338cc20f1797fd378c6adc">ContainerCartoes::remover</a></div><div class="ttdeci">bool remover(const Identificador &amp;identificador)</div><div class="ttdoc">Remove um cartao e suas relacoes de quadro e desenvolvedor.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:67</div></div>
+<div class="ttc" id="aclassContainerCartoes_html_af5ff5a05bbfb286636bf4db557b7d94b"><div class="ttname"><a href="classContainerCartoes.html#af5ff5a05bbfb286636bf4db557b7d94b">ContainerCartoes::listar</a></div><div class="ttdeci">list&lt; Identificador &gt; listar() const</div><div class="ttdoc">Retorna a lista de identificadores de todos os cartoes cadastrados.</div><div class="ttdef"><b>Definição</b> servicos_cartoes.cpp:81</div></div>
+<div class="ttc" id="aclassContainerPessoas_html"><div class="ttname"><a href="classContainerPessoas.html">ContainerPessoas</a></div><div class="ttdoc">Repositorio de pessoas em memoria.</div><div class="ttdef"><b>Definição</b> servicos_usuarios.h:25</div></div>
+<div class="ttc" id="aclassContainerQuadros_html"><div class="ttname"><a href="classContainerQuadros.html">ContainerQuadros</a></div><div class="ttdoc">Repositorio de quadros em memoria.</div><div class="ttdef"><b>Definição</b> servicos_quadros.h:26</div></div>
+<div class="ttc" id="aclassEmail_html"><div class="ttname"><a href="classEmail.html">Email</a></div><div class="ttdoc">Domínio Email.</div><div class="ttdef"><b>Definição</b> dominios.h:219</div></div>
+<div class="ttc" id="aclassEstado_html"><div class="ttname"><a href="classEstado.html">Estado</a></div><div class="ttdoc">Domínio Estado.</div><div class="ttdef"><b>Definição</b> dominios.h:169</div></div>
+<div class="ttc" id="aclassIServicosCartaoDeAtividade_html"><div class="ttname"><a href="classIServicosCartaoDeAtividade.html">IServicosCartaoDeAtividade</a></div><div class="ttdoc">Interface dos servicos de cartao de atividade.</div><div class="ttdef"><b>Definição</b> interfaces.h:319</div></div>
+<div class="ttc" id="aclassIdentificador_html"><div class="ttname"><a href="classIdentificador.html">Identificador</a></div><div class="ttdoc">Domínio Identificador.</div><div class="ttdef"><b>Definição</b> dominios.h:20</div></div>
+<div class="ttc" id="aclassTimestamp_html"><div class="ttname"><a href="classTimestamp.html">Timestamp</a></div><div class="ttdoc">Domínio Timestamp.</div><div class="ttdef"><b>Definição</b> dominios.h:94</div></div>
+<div class="ttc" id="ainterfaces_8h_html"><div class="ttname"><a href="interfaces_8h.html">interfaces.h</a></div><div class="ttdoc">Declaracao das interfaces que conectam as camadas de servico e apresentacao.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

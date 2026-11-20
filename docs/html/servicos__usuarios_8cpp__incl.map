@@ -1,0 +1,33 @@
+<map id="servicos/servicos_usuarios.cpp" name="servicos/servicos_usuarios.cpp">
+<area shape="rect" id="Node000001" title="Implementacao de ContainerPessoas, CntrServicosAutenticacao e CntrServicosPessoas." alt="" coords="227,5,450,31"/>
+<area shape="rect" id="Node000002" href="$servicos__usuarios_8h.html" title="Declaracao do ContainerPessoas, CntrServicosAutenticacao e CntrServicosPessoas." alt="" coords="5,79,213,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,33,161,77,159,72,301,28"/>
+<area shape="rect" id="Node000011" href="$servicos__projetos_8h.html" title="Declaracao do ContainerProjetos e CntrServicosProjetos." alt="" coords="463,79,670,104"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="376,28,517,72,516,77,375,33"/>
+<area shape="rect" id="Node000012" href="$servicos__cartoes_8h.html" title="Declaracao do ContainerCartoes e CntrServicosCartaoDeAtividade." alt="" coords="238,79,439,104"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="341,31,341,65,336,65,336,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="180,152,231,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,102,180,141,177,146,123,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="444,225,487,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="116,103,136,140,151,159,170,175,203,194,234,205,263,210,292,212,354,213,390,216,431,223,430,228,389,221,354,218,291,217,262,216,233,210,201,199,166,180,147,163,131,142,111,105"/>
+<area shape="rect" id="Node000005" href="$interfaces_8h.html" title="Declaracao das interfaces que conectam as camadas de servico e apresentacao." alt="" coords="255,152,423,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,101,289,145,287,150,145,107"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="360,175,434,216,431,221,358,180"/>
+<area shape="rect" id="Node000006" href="$dominios_8h.html" title="Declaração das classes de domínio do sistema Kanban." alt="" coords="199,299,350,324"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="304,180,269,198,254,211,242,227,238,241,241,257,257,287,253,290,236,259,233,241,238,224,250,207,266,194,301,175"/>
+<area shape="rect" id="Node000010" href="$entidades_8h.html" title="Declaração das classes de entidade do sistema Kanban." alt="" coords="253,225,419,251"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="341,178,340,212,334,212,336,178"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="164,372,223,397"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="263,326,219,365,215,361,260,322"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="247,372,303,397"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="277,324,277,358,272,358,272,324"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="327,372,414,397"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="292,322,345,361,342,366,289,326"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="328,253,296,290,292,286,324,249"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="491,107,379,126,245,154,244,149,378,121,490,101"/>
+<area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="561,106,483,216,479,213,556,103"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="531,107,390,150,388,145,529,101"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="318,106,240,148,238,143,316,102"/>
+<area shape="poly" id="edge18_Node000012_Node000004" title=" " alt="" coords="368,102,404,121,437,150,454,180,463,211,458,212,449,183,433,154,401,126,366,106"/>
+<area shape="poly" id="edge19_Node000012_Node000005" title=" " alt="" coords="341,104,341,138,336,138,336,104"/>
+</map>

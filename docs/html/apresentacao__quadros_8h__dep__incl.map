@@ -1,0 +1,7 @@
+<map id="apresentacao/apresentacao_quadros.h" name="apresentacao/apresentacao_quadros.h">
+<area shape="rect" id="Node000001" title="Declaracao da controladora de apresentacao de quadros." alt="" coords="88,5,291,45"/>
+<area shape="rect" id="Node000002" href="$apresentacao__quadros_8cpp.html" title="Implementacao da controladora de apresentacao de quadros." alt="" coords="5,93,208,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,57,127,95,123,91,159,54"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Ponto de entrada do sistema Kanban." alt="" coords="232,101,315,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,53,264,98,260,102,216,57"/>
+</map>

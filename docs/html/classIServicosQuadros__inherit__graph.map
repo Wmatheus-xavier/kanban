@@ -1,0 +1,5 @@
+<map id="IServicosQuadros" name="IServicosQuadros">
+<area shape="rect" id="Node000001" title="Interface dos servicos de quadro." alt="" coords="17,5,152,31"/>
+<area shape="rect" id="Node000002" href="$classCntrServicosQuadros.html" title="Controladora de servico de quadros." alt="" coords="5,79,164,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,44,87,79,82,79,82,44"/>
+</map>

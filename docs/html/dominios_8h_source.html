@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kanban: Código-Fonte de dominio/dominios.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kanban
+   </div>
+   <div id="projectbrief">Sistema de apoio a gestao de projetos com o metodo Kanban</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_eeca24345877b4f028eba6d6e07439c4.html">dominio</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">dominios.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="dominios_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef KANBAN_DOMINIOS_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define KANBAN_DOMINIOS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classIdentificador.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classIdentificador.html">Identificador</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">string</span> valor;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classIdentificador.html#a2d63ead0e0d6fa7df57bcada3edbae00">setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; v);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classIdentificador.html#ab28ad5dfba8ce4aa0e380211775ef53a">getValor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classNome.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classNome.html">Nome</a> {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> NOME_MIN = 1;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> NOME_MAX = 15;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">string</span> nome;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; nome);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classNome.html#a8f977942aba7072d114d086849260251">setNome</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; nome);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classNome.html#a1c08f5b9827a1e97a2631196ff99fdef">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="};">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classTexto.html">   70</a></span><span class="keyword">class </span><a class="code hl_class" href="classTexto.html">Texto</a> {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">string</span> valor;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classTexto.html#a048804cec769c0d3becc7bc56224cab6">setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; v);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classTexto.html#a329fce47e83d7d290b1e704e251dcd4b">getValor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>};</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="};">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classTimestamp.html">   94</a></span><span class="keyword">class </span><a class="code hl_class" href="classTimestamp.html">Timestamp</a> {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">string</span> valor;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classTimestamp.html#ab1f776a4688e3416ea2e54b7bf9f1054">setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; v);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classTimestamp.html#a3dba4e0f4c64774270dc3d05e1244e12">getValor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>};</div>
+</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="};">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classLimite.html">  118</a></span><span class="keyword">class </span><a class="code hl_class" href="classLimite.html">Limite</a> {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> LIMITE_MIN = 1;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> LIMITE_MAX = 25;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">int</span> valor = 1;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keywordtype">int</span> valor);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLimite.html#a3e6880dfddcb4b70462da70635b74694">setLimite</a>(<span class="keywordtype">int</span> valor);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classLimite.html#ac7bea5b158cd6cede3bb164b81b764b5">getLimite</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>};</div>
+</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="};">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classPrioridade.html">  144</a></span><span class="keyword">class </span><a class="code hl_class" href="classPrioridade.html">Prioridade</a> {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">constexpr</span> array&lt;const char *, 3&gt; OPCOES = { <span class="stringliteral">&quot;ALTA&quot;</span>, <span class="stringliteral">&quot;MEDIA&quot;</span>, <span class="stringliteral">&quot;BAIXA&quot;</span> };</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">string</span> prioridade;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; prioridade);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPrioridade.html#a8597282625f146c1480709a430d838fd">setPrioridade</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; prioridade);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classPrioridade.html#ade0ac92c3d4cbda5906602546f6c3500">getPrioridade</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>};</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="foldopen" id="foldopen00169" data-start="{" data-end="};">
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classEstado.html">  169</a></span><span class="keyword">class </span><a class="code hl_class" href="classEstado.html">Estado</a> {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">constexpr</span> array&lt;const char *, 3&gt; OPCOES = { <span class="stringliteral">&quot;A FAZER&quot;</span>, <span class="stringliteral">&quot;FAZENDO&quot;</span>, <span class="stringliteral">&quot;FEITO&quot;</span> };</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordtype">string</span> estado;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; estado);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEstado.html#aafb9477f0508a971eec89b6d0854b9c5">setEstado</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; estado);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classEstado.html#aedbb6c1d75f1dbe5d5869d147d14fc20">getEstado</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>};</div>
+</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="foldopen" id="foldopen00194" data-start="{" data-end="};">
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="classTamanho.html">  194</a></span><span class="keyword">class </span><a class="code hl_class" href="classTamanho.html">Tamanho</a> {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">constexpr</span> array&lt;const char *, 3&gt; OPCOES = { <span class="stringliteral">&quot;GRANDE&quot;</span>, <span class="stringliteral">&quot;MEDIO&quot;</span>, <span class="stringliteral">&quot;PEQUENO&quot;</span> };</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordtype">string</span> tamanho;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; tamanho);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classTamanho.html#ab6c1a8c546cbddb6a4ab80edb5037120">setTamanho</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; tamanho);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classTamanho.html#a73badc7bf0b7876e2647900351bc5262">getTamanho</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>};</div>
+</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="foldopen" id="foldopen00219" data-start="{" data-end="};">
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="classEmail.html">  219</a></span><span class="keyword">class </span><a class="code hl_class" href="classEmail.html">Email</a> {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordtype">string</span> email;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; email);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEmail.html#af212f6983e0b7a58350a047cccfb142f">setEmail</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; email);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classEmail.html#a6c314589c2042bf2234a9b5781d50def">getEmail</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>};</div>
+</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="foldopen" id="foldopen00243" data-start="{" data-end="};">
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="classSenha.html">  243</a></span><span class="keyword">class </span><a class="code hl_class" href="classSenha.html">Senha</a> {</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keywordtype">string</span> senha;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; senha);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSenha.html#ab29b4eb94108a0fca7d0da8b385d38fb">setSenha</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; senha);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classSenha.html#a1cc904431d0a8287d0b22dee3e9d34ae">getSenha</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>};</div>
+</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="foldopen" id="foldopen00267" data-start="{" data-end="};">
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="classPapel.html">  267</a></span><span class="keyword">class </span><a class="code hl_class" href="classPapel.html">Papel</a> {</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">constexpr</span> array&lt;const char *, 2&gt; OPCOES = { <span class="stringliteral">&quot;GESTOR&quot;</span>, <span class="stringliteral">&quot;DESENVOLVEDOR&quot;</span> };</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordtype">string</span> papel;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; papel);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPapel.html#a06b0d2199b9a4369a800878a43984492">setPapel</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; papel);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classPapel.html#abb37844cbd149bcd5673f5382d6893b4">getPapel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>};</div>
+</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">#endif </span><span class="comment">// KANBAN_DOMINIOS_H</span></div>
+<div class="ttc" id="aclassEmail_html"><div class="ttname"><a href="classEmail.html">Email</a></div><div class="ttdoc">Domínio Email.</div><div class="ttdef"><b>Definição</b> dominios.h:219</div></div>
+<div class="ttc" id="aclassEmail_html_a6c314589c2042bf2234a9b5781d50def"><div class="ttname"><a href="classEmail.html#a6c314589c2042bf2234a9b5781d50def">Email::getEmail</a></div><div class="ttdeci">string getEmail() const</div><div class="ttdoc">Obtém o valor do email.</div><div class="ttdef"><b>Definição</b> dominios.cpp:344</div></div>
+<div class="ttc" id="aclassEmail_html_af212f6983e0b7a58350a047cccfb142f"><div class="ttname"><a href="classEmail.html#af212f6983e0b7a58350a047cccfb142f">Email::setEmail</a></div><div class="ttdeci">void setEmail(const string &amp;email)</div><div class="ttdoc">Define o valor do email.</div><div class="ttdef"><b>Definição</b> dominios.cpp:339</div></div>
+<div class="ttc" id="aclassEstado_html"><div class="ttname"><a href="classEstado.html">Estado</a></div><div class="ttdoc">Domínio Estado.</div><div class="ttdef"><b>Definição</b> dominios.h:169</div></div>
+<div class="ttc" id="aclassEstado_html_aafb9477f0508a971eec89b6d0854b9c5"><div class="ttname"><a href="classEstado.html#aafb9477f0508a971eec89b6d0854b9c5">Estado::setEstado</a></div><div class="ttdeci">void setEstado(const string &amp;estado)</div><div class="ttdoc">Define o estado.</div><div class="ttdef"><b>Definição</b> dominios.cpp:249</div></div>
+<div class="ttc" id="aclassEstado_html_aedbb6c1d75f1dbe5d5869d147d14fc20"><div class="ttname"><a href="classEstado.html#aedbb6c1d75f1dbe5d5869d147d14fc20">Estado::getEstado</a></div><div class="ttdeci">string getEstado() const</div><div class="ttdoc">Obtém o valor do estado.</div><div class="ttdef"><b>Definição</b> dominios.cpp:254</div></div>
+<div class="ttc" id="aclassIdentificador_html"><div class="ttname"><a href="classIdentificador.html">Identificador</a></div><div class="ttdoc">Domínio Identificador.</div><div class="ttdef"><b>Definição</b> dominios.h:20</div></div>
+<div class="ttc" id="aclassIdentificador_html_a2d63ead0e0d6fa7df57bcada3edbae00"><div class="ttname"><a href="classIdentificador.html#a2d63ead0e0d6fa7df57bcada3edbae00">Identificador::setValor</a></div><div class="ttdeci">void setValor(const string &amp;v)</div><div class="ttdoc">Define o valor do identificador.</div><div class="ttdef"><b>Definição</b> dominios.cpp:33</div></div>
+<div class="ttc" id="aclassIdentificador_html_ab28ad5dfba8ce4aa0e380211775ef53a"><div class="ttname"><a href="classIdentificador.html#ab28ad5dfba8ce4aa0e380211775ef53a">Identificador::getValor</a></div><div class="ttdeci">string getValor() const</div><div class="ttdoc">Obtém o valor do identificador.</div><div class="ttdef"><b>Definição</b> dominios.cpp:38</div></div>
+<div class="ttc" id="aclassLimite_html"><div class="ttname"><a href="classLimite.html">Limite</a></div><div class="ttdoc">Domínio Limite.</div><div class="ttdef"><b>Definição</b> dominios.h:118</div></div>
+<div class="ttc" id="aclassLimite_html_a3e6880dfddcb4b70462da70635b74694"><div class="ttname"><a href="classLimite.html#a3e6880dfddcb4b70462da70635b74694">Limite::setLimite</a></div><div class="ttdeci">void setLimite(int valor)</div><div class="ttdoc">Define o valor do limite.</div><div class="ttdef"><b>Definição</b> dominios.cpp:171</div></div>
+<div class="ttc" id="aclassLimite_html_ac7bea5b158cd6cede3bb164b81b764b5"><div class="ttname"><a href="classLimite.html#ac7bea5b158cd6cede3bb164b81b764b5">Limite::getLimite</a></div><div class="ttdeci">int getLimite() const</div><div class="ttdoc">Obtém o valor do limite.</div><div class="ttdef"><b>Definição</b> dominios.cpp:176</div></div>
+<div class="ttc" id="aclassNome_html"><div class="ttname"><a href="classNome.html">Nome</a></div><div class="ttdoc">Domínio Nome.</div><div class="ttdef"><b>Definição</b> dominios.h:44</div></div>
+<div class="ttc" id="aclassNome_html_a1c08f5b9827a1e97a2631196ff99fdef"><div class="ttname"><a href="classNome.html#a1c08f5b9827a1e97a2631196ff99fdef">Nome::getNome</a></div><div class="ttdeci">string getNome() const</div><div class="ttdoc">Obtém o valor do nome.</div><div class="ttdef"><b>Definição</b> dominios.cpp:210</div></div>
+<div class="ttc" id="aclassNome_html_a8f977942aba7072d114d086849260251"><div class="ttname"><a href="classNome.html#a8f977942aba7072d114d086849260251">Nome::setNome</a></div><div class="ttdeci">void setNome(const string &amp;nome)</div><div class="ttdoc">Define o valor do nome.</div><div class="ttdef"><b>Definição</b> dominios.cpp:205</div></div>
+<div class="ttc" id="aclassPapel_html"><div class="ttname"><a href="classPapel.html">Papel</a></div><div class="ttdoc">Domínio Papel.</div><div class="ttdef"><b>Definição</b> dominios.h:267</div></div>
+<div class="ttc" id="aclassPapel_html_a06b0d2199b9a4369a800878a43984492"><div class="ttname"><a href="classPapel.html#a06b0d2199b9a4369a800878a43984492">Papel::setPapel</a></div><div class="ttdeci">void setPapel(const string &amp;papel)</div><div class="ttdoc">Define o papel.</div><div class="ttdef"><b>Definição</b> dominios.cpp:395</div></div>
+<div class="ttc" id="aclassPapel_html_abb37844cbd149bcd5673f5382d6893b4"><div class="ttname"><a href="classPapel.html#abb37844cbd149bcd5673f5382d6893b4">Papel::getPapel</a></div><div class="ttdeci">string getPapel() const</div><div class="ttdoc">Obtém o papel.</div><div class="ttdef"><b>Definição</b> dominios.cpp:400</div></div>
+<div class="ttc" id="aclassPrioridade_html"><div class="ttname"><a href="classPrioridade.html">Prioridade</a></div><div class="ttdoc">Domínio Prioridade.</div><div class="ttdef"><b>Definição</b> dominios.h:144</div></div>
+<div class="ttc" id="aclassPrioridade_html_a8597282625f146c1480709a430d838fd"><div class="ttname"><a href="classPrioridade.html#a8597282625f146c1480709a430d838fd">Prioridade::setPrioridade</a></div><div class="ttdeci">void setPrioridade(const string &amp;prioridade)</div><div class="ttdoc">Define a prioridade.</div><div class="ttdef"><b>Definição</b> dominios.cpp:227</div></div>
+<div class="ttc" id="aclassPrioridade_html_ade0ac92c3d4cbda5906602546f6c3500"><div class="ttname"><a href="classPrioridade.html#ade0ac92c3d4cbda5906602546f6c3500">Prioridade::getPrioridade</a></div><div class="ttdeci">string getPrioridade() const</div><div class="ttdoc">Obtém o valor da prioridade.</div><div class="ttdef"><b>Definição</b> dominios.cpp:232</div></div>
+<div class="ttc" id="aclassSenha_html"><div class="ttname"><a href="classSenha.html">Senha</a></div><div class="ttdoc">Domínio Senha.</div><div class="ttdef"><b>Definição</b> dominios.h:243</div></div>
+<div class="ttc" id="aclassSenha_html_a1cc904431d0a8287d0b22dee3e9d34ae"><div class="ttname"><a href="classSenha.html#a1cc904431d0a8287d0b22dee3e9d34ae">Senha::getSenha</a></div><div class="ttdeci">string getSenha() const</div><div class="ttdoc">Obtém o valor da senha.</div><div class="ttdef"><b>Definição</b> dominios.cpp:378</div></div>
+<div class="ttc" id="aclassSenha_html_ab29b4eb94108a0fca7d0da8b385d38fb"><div class="ttname"><a href="classSenha.html#ab29b4eb94108a0fca7d0da8b385d38fb">Senha::setSenha</a></div><div class="ttdeci">void setSenha(const string &amp;senha)</div><div class="ttdoc">Define o valor da senha.</div><div class="ttdef"><b>Definição</b> dominios.cpp:373</div></div>
+<div class="ttc" id="aclassTamanho_html"><div class="ttname"><a href="classTamanho.html">Tamanho</a></div><div class="ttdoc">Domínio Tamanho.</div><div class="ttdef"><b>Definição</b> dominios.h:194</div></div>
+<div class="ttc" id="aclassTamanho_html_a73badc7bf0b7876e2647900351bc5262"><div class="ttname"><a href="classTamanho.html#a73badc7bf0b7876e2647900351bc5262">Tamanho::getTamanho</a></div><div class="ttdeci">string getTamanho() const</div><div class="ttdoc">Obtém o tamanho.</div><div class="ttdef"><b>Definição</b> dominios.cpp:276</div></div>
+<div class="ttc" id="aclassTamanho_html_ab6c1a8c546cbddb6a4ab80edb5037120"><div class="ttname"><a href="classTamanho.html#ab6c1a8c546cbddb6a4ab80edb5037120">Tamanho::setTamanho</a></div><div class="ttdeci">void setTamanho(const string &amp;tamanho)</div><div class="ttdoc">Define o tamanho.</div><div class="ttdef"><b>Definição</b> dominios.cpp:271</div></div>
+<div class="ttc" id="aclassTexto_html"><div class="ttname"><a href="classTexto.html">Texto</a></div><div class="ttdoc">Domínio Texto.</div><div class="ttdef"><b>Definição</b> dominios.h:70</div></div>
+<div class="ttc" id="aclassTexto_html_a048804cec769c0d3becc7bc56224cab6"><div class="ttname"><a href="classTexto.html#a048804cec769c0d3becc7bc56224cab6">Texto::setValor</a></div><div class="ttdeci">void setValor(const string &amp;v)</div><div class="ttdoc">Define o valor do texto.</div><div class="ttdef"><b>Definição</b> dominios.cpp:72</div></div>
+<div class="ttc" id="aclassTexto_html_a329fce47e83d7d290b1e704e251dcd4b"><div class="ttname"><a href="classTexto.html#a329fce47e83d7d290b1e704e251dcd4b">Texto::getValor</a></div><div class="ttdeci">string getValor() const</div><div class="ttdoc">Obtém o valor do texto.</div><div class="ttdef"><b>Definição</b> dominios.cpp:77</div></div>
+<div class="ttc" id="aclassTimestamp_html"><div class="ttname"><a href="classTimestamp.html">Timestamp</a></div><div class="ttdoc">Domínio Timestamp.</div><div class="ttdef"><b>Definição</b> dominios.h:94</div></div>
+<div class="ttc" id="aclassTimestamp_html_a3dba4e0f4c64774270dc3d05e1244e12"><div class="ttname"><a href="classTimestamp.html#a3dba4e0f4c64774270dc3d05e1244e12">Timestamp::getValor</a></div><div class="ttdeci">string getValor() const</div><div class="ttdoc">Obtém o valor do timestamp.</div><div class="ttdef"><b>Definição</b> dominios.cpp:157</div></div>
+<div class="ttc" id="aclassTimestamp_html_ab1f776a4688e3416ea2e54b7bf9f1054"><div class="ttname"><a href="classTimestamp.html#ab1f776a4688e3416ea2e54b7bf9f1054">Timestamp::setValor</a></div><div class="ttdeci">void setValor(const string &amp;v)</div><div class="ttdoc">Define o valor do timestamp.</div><div class="ttdef"><b>Definição</b> dominios.cpp:152</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

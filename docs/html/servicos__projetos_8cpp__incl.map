@@ -1,0 +1,33 @@
+<map id="servicos/servicos_projetos.cpp" name="servicos/servicos_projetos.cpp">
+<area shape="rect" id="Node000001" title="Implementacao de ContainerProjetos e CntrServicosProjetos." alt="" coords="229,5,450,31"/>
+<area shape="rect" id="Node000002" href="$servicos__projetos_8h.html" title="Declaracao do ContainerProjetos e CntrServicosProjetos." alt="" coords="5,79,212,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,33,160,77,158,72,301,28"/>
+<area shape="rect" id="Node000011" href="$servicos__usuarios_8h.html" title="Declaracao do ContainerPessoas, CntrServicosAutenticacao e CntrServicosPessoas." alt="" coords="466,79,674,104"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="377,28,521,72,519,77,376,33"/>
+<area shape="rect" id="Node000012" href="$servicos__quadros_8h.html" title="Declaracao do ContainerQuadros e CntrServicosQuadros." alt="" coords="237,79,442,104"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="342,31,342,65,337,65,337,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="181,152,231,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,102,180,141,177,146,123,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="445,225,487,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="116,103,136,140,151,159,170,175,204,194,235,205,264,210,292,212,355,213,391,216,432,223,431,228,390,221,354,218,292,217,263,215,233,210,202,198,167,180,147,163,131,142,111,105"/>
+<area shape="rect" id="Node000005" href="$interfaces_8h.html" title="Declaracao das interfaces que conectam as camadas de servico e apresentacao." alt="" coords="255,152,423,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="147,101,290,145,288,151,145,107"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="361,175,435,216,432,221,358,180"/>
+<area shape="rect" id="Node000006" href="$dominios_8h.html" title="Declaração das classes de domínio do sistema Kanban." alt="" coords="200,299,351,324"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="304,180,270,198,255,211,243,227,239,241,241,257,258,287,253,290,236,259,234,241,238,224,251,207,267,194,302,175"/>
+<area shape="rect" id="Node000010" href="$entidades_8h.html" title="Declaração das classes de entidade do sistema Kanban." alt="" coords="253,225,420,251"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="342,178,340,212,335,212,336,178"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="165,372,223,397"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="264,326,219,365,216,361,261,322"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="247,372,303,397"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="278,324,278,358,273,358,273,324"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="328,372,415,397"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="292,322,346,361,343,366,289,326"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="329,253,296,290,292,286,325,249"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="493,107,380,126,245,155,244,149,379,121,492,101"/>
+<area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="564,106,484,216,480,213,559,103"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="534,107,390,151,389,145,532,101"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="319,106,241,148,239,143,317,102"/>
+<area shape="poly" id="edge18_Node000012_Node000004" title=" " alt="" coords="369,102,404,121,437,150,455,180,464,211,459,212,450,183,433,154,401,126,366,106"/>
+<area shape="poly" id="edge19_Node000012_Node000005" title=" " alt="" coords="342,104,342,138,337,138,337,104"/>
+</map>

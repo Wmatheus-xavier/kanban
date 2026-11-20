@@ -1,0 +1,5 @@
+<map id="Gráfico de Hierarquia de Classes" name="Gráfico de Hierarquia de Classes">
+<area shape="rect" id="Node000000" href="$classIUQuadros.html" title="Interface da apresentacao de quadros." alt="" coords="5,5,96,31"/>
+<area shape="rect" id="Node000001" href="$classCntrIUQuadros.html" title="Controladora de interface de usuario para quadros." alt="" coords="144,5,261,31"/>
+<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="110,15,144,15,144,21,110,21"/>
+</map>

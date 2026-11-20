@@ -1,0 +1,9 @@
+<map id="dominio/dominios.h" name="dominio/dominios.h">
+<area shape="rect" id="Node000001" title="Declaração das classes de domínio do sistema Kanban." alt="" coords="41,5,191,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,64,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,33,60,72,56,68,101,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,79,144,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,31,119,65,113,65,113,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="169,79,255,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,29,187,68,184,72,130,33"/>
+</map>

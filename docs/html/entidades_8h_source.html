@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kanban: Código-Fonte de entidades/entidades.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kanban
+   </div>
+   <div id="projectbrief">Sistema de apoio a gestao de projetos com o metodo Kanban</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97eb6680ba814fee2720e6d851c9f3cb.html">entidades</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">entidades.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="entidades_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef KANBAN_ENTIDADES_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define KANBAN_ENTIDADES_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="dominios_8h.html">dominio/dominios.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classProjeto.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classProjeto.html">Projeto</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="classIdentificador.html">Identificador</a> identificador;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_class" href="classNome.html">Nome</a> nome;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_class" href="classTexto.html">Texto</a> descricao;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> inicio;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> termino;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#a664b76220e0444b3a74d73211781f1b2">setIdentificador</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; identificador);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_class" href="classIdentificador.html">Identificador</a> <a class="code hl_function" href="classProjeto.html#a73c48a33c8a22c6fea1349184829eaae">getIdentificador</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#a653d8397857e75322e84fb346f150e37">setNome</a>(<span class="keyword">const</span> <a class="code hl_class" href="classNome.html">Nome</a>&amp; nome);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_class" href="classNome.html">Nome</a> <a class="code hl_function" href="classProjeto.html#a1eb1c0d356d0f662ac6fda75ff766004">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#a80646ddf5e0a1da8267bbfb965f88ff6">setDescricao</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTexto.html">Texto</a>&amp; descricao);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_class" href="classTexto.html">Texto</a> <a class="code hl_function" href="classProjeto.html#a600487ea6215134c7035454139cfd348">getDescricao</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#ad33275a0ef457bd4e45c7e1b1ebff2a5">setInicio</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTimestamp.html">Timestamp</a>&amp; inicio);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> <a class="code hl_function" href="classProjeto.html#a4644b46ebb4291e2993a6d811df50dd8">getInicio</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classProjeto.html#a0d5e9175c1732860b1dc2a7561341a5b">setTermino</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTimestamp.html">Timestamp</a>&amp; termino);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> <a class="code hl_function" href="classProjeto.html#a3278bde27423f1ab0027acb3e557cfe7">getTermino</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="};">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classQuadro.html">  103</a></span><span class="keyword">class </span><a class="code hl_class" href="classQuadro.html">Quadro</a> {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_class" href="classIdentificador.html">Identificador</a> identificador;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_class" href="classNome.html">Nome</a> nome;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <a class="code hl_class" href="classLimite.html">Limite</a> limite;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classQuadro.html#a6cbef16de0378db988fa650249b2b627">setIdentificador</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; identificador);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <a class="code hl_class" href="classIdentificador.html">Identificador</a> <a class="code hl_function" href="classQuadro.html#a422b4527e318b8fbb72d1a98a18dc98c">getIdentificador</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classQuadro.html#a799d4fe709ede0f7b6f1fb3b3d25d27e">setNome</a>(<span class="keyword">const</span> <a class="code hl_class" href="classNome.html">Nome</a>&amp; nome);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_class" href="classNome.html">Nome</a> <a class="code hl_function" href="classQuadro.html#a260b4f46651e8551028185dc81ca2692">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classQuadro.html#afb9cc6ac383f0bb2171e54b73b52d4f6">setLimite</a>(<span class="keyword">const</span> <a class="code hl_class" href="classLimite.html">Limite</a>&amp; limite);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <a class="code hl_class" href="classLimite.html">Limite</a> <a class="code hl_function" href="classQuadro.html#a7799b0eea6c85113d94d4f231108c354">getLimite</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>};</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="foldopen" id="foldopen00155" data-start="{" data-end="};">
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classCartaoDeAtividade.html">  155</a></span><span class="keyword">class </span><a class="code hl_class" href="classCartaoDeAtividade.html">CartaoDeAtividade</a> {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <a class="code hl_class" href="classIdentificador.html">Identificador</a> identificador;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <a class="code hl_class" href="classNome.html">Nome</a> nome;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <a class="code hl_class" href="classTexto.html">Texto</a> descricao;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <a class="code hl_class" href="classPrioridade.html">Prioridade</a> prioridade;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <a class="code hl_class" href="classEstado.html">Estado</a> estado;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <a class="code hl_class" href="classTamanho.html">Tamanho</a> tamanho;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> entrada;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> inicio;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> termino;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCartaoDeAtividade.html#a6b6eb420a52a6422cdc06839a9e66a66">setIdentificador</a>(<span class="keyword">const</span> <a class="code hl_class" href="classIdentificador.html">Identificador</a>&amp; identificador);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <a class="code hl_class" href="classIdentificador.html">Identificador</a> <a class="code hl_function" href="classCartaoDeAtividade.html#a14d14074bb8baf2f0b4135b83e38b5b7">getIdentificador</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCartaoDeAtividade.html#af732283f4e589e4f2e829d43e95ae711">setNome</a>(<span class="keyword">const</span> <a class="code hl_class" href="classNome.html">Nome</a>&amp; nome);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <a class="code hl_class" href="classNome.html">Nome</a> <a class="code hl_function" href="classCartaoDeAtividade.html#a161b6825a8df2c32353a7fa911febe1c">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCartaoDeAtividade.html#a1b6fb6dd7ae1168e854db8d01bb349e5">setDescricao</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTexto.html">Texto</a>&amp; descricao);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <a class="code hl_class" href="classTexto.html">Texto</a> <a class="code hl_function" href="classCartaoDeAtividade.html#a49f21e30daa52d4a5fb9490015bce823">getDescricao</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCartaoDeAtividade.html#a3c06ebc40cce8143e0820af1cbf07780">setPrioridade</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPrioridade.html">Prioridade</a>&amp; prioridade);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <a class="code hl_class" href="classPrioridade.html">Prioridade</a> <a class="code hl_function" href="classCartaoDeAtividade.html#a7f96f33a72b5e354277574d1b873b268">getPrioridade</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCartaoDeAtividade.html#a2cba7735ab7356c5282b37acca850c10">setEstado</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEstado.html">Estado</a>&amp; estado);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <a class="code hl_class" href="classEstado.html">Estado</a> <a class="code hl_function" href="classCartaoDeAtividade.html#ad9ea29677242940614513351a6bffceb">getEstado</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCartaoDeAtividade.html#a879afdc08c197c6209cb896719dd98ac">setTamanho</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTamanho.html">Tamanho</a>&amp; tamanho);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <a class="code hl_class" href="classTamanho.html">Tamanho</a> <a class="code hl_function" href="classCartaoDeAtividade.html#ac1f9ee308f794368e5e117db9e9713cd">getTamanho</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCartaoDeAtividade.html#ab64487ee8cc6c144a2f26f361e25ea5f">setEntrada</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTimestamp.html">Timestamp</a>&amp; entrada);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> <a class="code hl_function" href="classCartaoDeAtividade.html#ab8ffd25fe14ddb0097c7218d4dbcf412">getEntrada</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCartaoDeAtividade.html#a568d8a7de1069c5b1431923ec35f269f">setInicio</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTimestamp.html">Timestamp</a>&amp; inicio);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> <a class="code hl_function" href="classCartaoDeAtividade.html#a5e0f573120773698bc26d0c049c8d583">getInicio</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classCartaoDeAtividade.html#ad8a8783923c3a842eef9fe97b98963f3">setTermino</a>(<span class="keyword">const</span> <a class="code hl_class" href="classTimestamp.html">Timestamp</a>&amp; termino);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <a class="code hl_class" href="classTimestamp.html">Timestamp</a> <a class="code hl_function" href="classCartaoDeAtividade.html#a6ea6be8aa49139a15436613a613c3a1a">getTermino</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>};</div>
+</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="foldopen" id="foldopen00285" data-start="{" data-end="};">
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="classPessoa.html">  285</a></span><span class="keyword">class </span><a class="code hl_class" href="classPessoa.html">Pessoa</a> {</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <a class="code hl_class" href="classEmail.html">Email</a> email;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        <a class="code hl_class" href="classNome.html">Nome</a> nome;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <a class="code hl_class" href="classSenha.html">Senha</a> senha;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <a class="code hl_class" href="classPapel.html">Papel</a> papel;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classPessoa.html#a07c9dc9687e897de901a0361cdae0401">setEmail</a>(<span class="keyword">const</span> <a class="code hl_class" href="classEmail.html">Email</a>&amp; email);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        <a class="code hl_class" href="classEmail.html">Email</a> <a class="code hl_function" href="classPessoa.html#a137a2a665a10ffa4880d1f7d726b07c7">getEmail</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classPessoa.html#afddbfe1fabc8e39b53f9b59b24702591">setNome</a>(<span class="keyword">const</span> <a class="code hl_class" href="classNome.html">Nome</a>&amp; nome);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <a class="code hl_class" href="classNome.html">Nome</a> <a class="code hl_function" href="classPessoa.html#ad0c0448768ca2f5b5dfca86f156cdfe9">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classPessoa.html#a57ed4246933f9585fc92a4adf9e1f69f">setSenha</a>(<span class="keyword">const</span> <a class="code hl_class" href="classSenha.html">Senha</a>&amp; senha);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        <a class="code hl_class" href="classSenha.html">Senha</a> <a class="code hl_function" href="classPessoa.html#a02498f338ca00cdd18e794f17d660281">getSenha</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classPessoa.html#af9fd246c333ffb8c8deef7a4c00fed68">setPapel</a>(<span class="keyword">const</span> <a class="code hl_class" href="classPapel.html">Papel</a>&amp; papel);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        <a class="code hl_class" href="classPapel.html">Papel</a> <a class="code hl_function" href="classPessoa.html#a8c7e1938888e9e84b5c30ca977b98b9d">getPapel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>};</div>
+</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="preprocessor">#endif </span><span class="comment">// KANBAN_ENTIDADES_H</span></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html"><div class="ttname"><a href="classCartaoDeAtividade.html">CartaoDeAtividade</a></div><div class="ttdoc">Entidade Cartão de Atividade.</div><div class="ttdef"><b>Definição</b> entidades.h:155</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a14d14074bb8baf2f0b4135b83e38b5b7"><div class="ttname"><a href="classCartaoDeAtividade.html#a14d14074bb8baf2f0b4135b83e38b5b7">CartaoDeAtividade::getIdentificador</a></div><div class="ttdeci">Identificador getIdentificador() const</div><div class="ttdoc">Obtém o identificador do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:93</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a161b6825a8df2c32353a7fa911febe1c"><div class="ttname"><a href="classCartaoDeAtividade.html#a161b6825a8df2c32353a7fa911febe1c">CartaoDeAtividade::getNome</a></div><div class="ttdeci">Nome getNome() const</div><div class="ttdoc">Obtém o nome do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:101</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a1b6fb6dd7ae1168e854db8d01bb349e5"><div class="ttname"><a href="classCartaoDeAtividade.html#a1b6fb6dd7ae1168e854db8d01bb349e5">CartaoDeAtividade::setDescricao</a></div><div class="ttdeci">void setDescricao(const Texto &amp;descricao)</div><div class="ttdoc">Define a descrição do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:105</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a2cba7735ab7356c5282b37acca850c10"><div class="ttname"><a href="classCartaoDeAtividade.html#a2cba7735ab7356c5282b37acca850c10">CartaoDeAtividade::setEstado</a></div><div class="ttdeci">void setEstado(const Estado &amp;estado)</div><div class="ttdoc">Define o estado do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:121</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a3c06ebc40cce8143e0820af1cbf07780"><div class="ttname"><a href="classCartaoDeAtividade.html#a3c06ebc40cce8143e0820af1cbf07780">CartaoDeAtividade::setPrioridade</a></div><div class="ttdeci">void setPrioridade(const Prioridade &amp;prioridade)</div><div class="ttdoc">Define a prioridade do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:113</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a49f21e30daa52d4a5fb9490015bce823"><div class="ttname"><a href="classCartaoDeAtividade.html#a49f21e30daa52d4a5fb9490015bce823">CartaoDeAtividade::getDescricao</a></div><div class="ttdeci">Texto getDescricao() const</div><div class="ttdoc">Obtém a descrição do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:109</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a568d8a7de1069c5b1431923ec35f269f"><div class="ttname"><a href="classCartaoDeAtividade.html#a568d8a7de1069c5b1431923ec35f269f">CartaoDeAtividade::setInicio</a></div><div class="ttdeci">void setInicio(const Timestamp &amp;inicio)</div><div class="ttdoc">Define o momento em que o cartão entrou na coluna FAZENDO.</div><div class="ttdef"><b>Definição</b> entidades.cpp:137</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a5e0f573120773698bc26d0c049c8d583"><div class="ttname"><a href="classCartaoDeAtividade.html#a5e0f573120773698bc26d0c049c8d583">CartaoDeAtividade::getInicio</a></div><div class="ttdeci">Timestamp getInicio() const</div><div class="ttdoc">Obtém o momento em que o cartão entrou na coluna FAZENDO.</div><div class="ttdef"><b>Definição</b> entidades.cpp:141</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a6b6eb420a52a6422cdc06839a9e66a66"><div class="ttname"><a href="classCartaoDeAtividade.html#a6b6eb420a52a6422cdc06839a9e66a66">CartaoDeAtividade::setIdentificador</a></div><div class="ttdeci">void setIdentificador(const Identificador &amp;identificador)</div><div class="ttdoc">Define o identificador do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:89</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a6ea6be8aa49139a15436613a613c3a1a"><div class="ttname"><a href="classCartaoDeAtividade.html#a6ea6be8aa49139a15436613a613c3a1a">CartaoDeAtividade::getTermino</a></div><div class="ttdeci">Timestamp getTermino() const</div><div class="ttdoc">Obtém o momento em que o cartão chegou à coluna FEITO.</div><div class="ttdef"><b>Definição</b> entidades.cpp:149</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a7f96f33a72b5e354277574d1b873b268"><div class="ttname"><a href="classCartaoDeAtividade.html#a7f96f33a72b5e354277574d1b873b268">CartaoDeAtividade::getPrioridade</a></div><div class="ttdeci">Prioridade getPrioridade() const</div><div class="ttdoc">Obtém a prioridade do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:117</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_a879afdc08c197c6209cb896719dd98ac"><div class="ttname"><a href="classCartaoDeAtividade.html#a879afdc08c197c6209cb896719dd98ac">CartaoDeAtividade::setTamanho</a></div><div class="ttdeci">void setTamanho(const Tamanho &amp;tamanho)</div><div class="ttdoc">Define o tamanho do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:129</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_ab64487ee8cc6c144a2f26f361e25ea5f"><div class="ttname"><a href="classCartaoDeAtividade.html#ab64487ee8cc6c144a2f26f361e25ea5f">CartaoDeAtividade::setEntrada</a></div><div class="ttdeci">void setEntrada(const Timestamp &amp;entrada)</div><div class="ttdoc">Define o momento em que o cartão entrou na coluna A FAZER.</div><div class="ttdef"><b>Definição</b> entidades.cpp:153</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_ab8ffd25fe14ddb0097c7218d4dbcf412"><div class="ttname"><a href="classCartaoDeAtividade.html#ab8ffd25fe14ddb0097c7218d4dbcf412">CartaoDeAtividade::getEntrada</a></div><div class="ttdeci">Timestamp getEntrada() const</div><div class="ttdoc">Obtém o momento em que o cartão entrou na coluna A FAZER.</div><div class="ttdef"><b>Definição</b> entidades.cpp:157</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_ac1f9ee308f794368e5e117db9e9713cd"><div class="ttname"><a href="classCartaoDeAtividade.html#ac1f9ee308f794368e5e117db9e9713cd">CartaoDeAtividade::getTamanho</a></div><div class="ttdeci">Tamanho getTamanho() const</div><div class="ttdoc">Obtém o tamanho do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:133</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_ad8a8783923c3a842eef9fe97b98963f3"><div class="ttname"><a href="classCartaoDeAtividade.html#ad8a8783923c3a842eef9fe97b98963f3">CartaoDeAtividade::setTermino</a></div><div class="ttdeci">void setTermino(const Timestamp &amp;termino)</div><div class="ttdoc">Define o momento em que o cartão chegou à coluna FEITO.</div><div class="ttdef"><b>Definição</b> entidades.cpp:145</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_ad9ea29677242940614513351a6bffceb"><div class="ttname"><a href="classCartaoDeAtividade.html#ad9ea29677242940614513351a6bffceb">CartaoDeAtividade::getEstado</a></div><div class="ttdeci">Estado getEstado() const</div><div class="ttdoc">Obtém o estado do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:125</div></div>
+<div class="ttc" id="aclassCartaoDeAtividade_html_af732283f4e589e4f2e829d43e95ae711"><div class="ttname"><a href="classCartaoDeAtividade.html#af732283f4e589e4f2e829d43e95ae711">CartaoDeAtividade::setNome</a></div><div class="ttdeci">void setNome(const Nome &amp;nome)</div><div class="ttdoc">Define o nome do cartão.</div><div class="ttdef"><b>Definição</b> entidades.cpp:97</div></div>
+<div class="ttc" id="aclassEmail_html"><div class="ttname"><a href="classEmail.html">Email</a></div><div class="ttdoc">Domínio Email.</div><div class="ttdef"><b>Definição</b> dominios.h:219</div></div>
+<div class="ttc" id="aclassEstado_html"><div class="ttname"><a href="classEstado.html">Estado</a></div><div class="ttdoc">Domínio Estado.</div><div class="ttdef"><b>Definição</b> dominios.h:169</div></div>
+<div class="ttc" id="aclassIdentificador_html"><div class="ttname"><a href="classIdentificador.html">Identificador</a></div><div class="ttdoc">Domínio Identificador.</div><div class="ttdef"><b>Definição</b> dominios.h:20</div></div>
+<div class="ttc" id="aclassLimite_html"><div class="ttname"><a href="classLimite.html">Limite</a></div><div class="ttdoc">Domínio Limite.</div><div class="ttdef"><b>Definição</b> dominios.h:118</div></div>
+<div class="ttc" id="aclassNome_html"><div class="ttname"><a href="classNome.html">Nome</a></div><div class="ttdoc">Domínio Nome.</div><div class="ttdef"><b>Definição</b> dominios.h:44</div></div>
+<div class="ttc" id="aclassPapel_html"><div class="ttname"><a href="classPapel.html">Papel</a></div><div class="ttdoc">Domínio Papel.</div><div class="ttdef"><b>Definição</b> dominios.h:267</div></div>
+<div class="ttc" id="aclassPessoa_html"><div class="ttname"><a href="classPessoa.html">Pessoa</a></div><div class="ttdoc">Entidade Pessoa.</div><div class="ttdef"><b>Definição</b> entidades.h:285</div></div>
+<div class="ttc" id="aclassPessoa_html_a02498f338ca00cdd18e794f17d660281"><div class="ttname"><a href="classPessoa.html#a02498f338ca00cdd18e794f17d660281">Pessoa::getSenha</a></div><div class="ttdeci">Senha getSenha() const</div><div class="ttdoc">Obtém a senha da pessoa.</div><div class="ttdef"><b>Definição</b> entidades.cpp:185</div></div>
+<div class="ttc" id="aclassPessoa_html_a07c9dc9687e897de901a0361cdae0401"><div class="ttname"><a href="classPessoa.html#a07c9dc9687e897de901a0361cdae0401">Pessoa::setEmail</a></div><div class="ttdeci">void setEmail(const Email &amp;email)</div><div class="ttdoc">Define o email da pessoa (chave primária)</div><div class="ttdef"><b>Definição</b> entidades.cpp:165</div></div>
+<div class="ttc" id="aclassPessoa_html_a137a2a665a10ffa4880d1f7d726b07c7"><div class="ttname"><a href="classPessoa.html#a137a2a665a10ffa4880d1f7d726b07c7">Pessoa::getEmail</a></div><div class="ttdeci">Email getEmail() const</div><div class="ttdoc">Obtém o email da pessoa.</div><div class="ttdef"><b>Definição</b> entidades.cpp:169</div></div>
+<div class="ttc" id="aclassPessoa_html_a57ed4246933f9585fc92a4adf9e1f69f"><div class="ttname"><a href="classPessoa.html#a57ed4246933f9585fc92a4adf9e1f69f">Pessoa::setSenha</a></div><div class="ttdeci">void setSenha(const Senha &amp;senha)</div><div class="ttdoc">Define a senha da pessoa.</div><div class="ttdef"><b>Definição</b> entidades.cpp:181</div></div>
+<div class="ttc" id="aclassPessoa_html_a8c7e1938888e9e84b5c30ca977b98b9d"><div class="ttname"><a href="classPessoa.html#a8c7e1938888e9e84b5c30ca977b98b9d">Pessoa::getPapel</a></div><div class="ttdeci">Papel getPapel() const</div><div class="ttdoc">Obtém o papel da pessoa.</div><div class="ttdef"><b>Definição</b> entidades.cpp:193</div></div>
+<div class="ttc" id="aclassPessoa_html_ad0c0448768ca2f5b5dfca86f156cdfe9"><div class="ttname"><a href="classPessoa.html#ad0c0448768ca2f5b5dfca86f156cdfe9">Pessoa::getNome</a></div><div class="ttdeci">Nome getNome() const</div><div class="ttdoc">Obtém o nome da pessoa.</div><div class="ttdef"><b>Definição</b> entidades.cpp:177</div></div>
+<div class="ttc" id="aclassPessoa_html_af9fd246c333ffb8c8deef7a4c00fed68"><div class="ttname"><a href="classPessoa.html#af9fd246c333ffb8c8deef7a4c00fed68">Pessoa::setPapel</a></div><div class="ttdeci">void setPapel(const Papel &amp;papel)</div><div class="ttdoc">Define o papel da pessoa.</div><div class="ttdef"><b>Definição</b> entidades.cpp:189</div></div>
+<div class="ttc" id="aclassPessoa_html_afddbfe1fabc8e39b53f9b59b24702591"><div class="ttname"><a href="classPessoa.html#afddbfe1fabc8e39b53f9b59b24702591">Pessoa::setNome</a></div><div class="ttdeci">void setNome(const Nome &amp;nome)</div><div class="ttdoc">Define o nome da pessoa.</div><div class="ttdef"><b>Definição</b> entidades.cpp:173</div></div>
+<div class="ttc" id="aclassPrioridade_html"><div class="ttname"><a href="classPrioridade.html">Prioridade</a></div><div class="ttdoc">Domínio Prioridade.</div><div class="ttdef"><b>Definição</b> dominios.h:144</div></div>
+<div class="ttc" id="aclassProjeto_html"><div class="ttname"><a href="classProjeto.html">Projeto</a></div><div class="ttdoc">Entidade Projeto.</div><div class="ttdef"><b>Definição</b> entidades.h:25</div></div>
+<div class="ttc" id="aclassProjeto_html_a0d5e9175c1732860b1dc2a7561341a5b"><div class="ttname"><a href="classProjeto.html#a0d5e9175c1732860b1dc2a7561341a5b">Projeto::setTermino</a></div><div class="ttdeci">void setTermino(const Timestamp &amp;termino)</div><div class="ttdoc">Define a data e o horário de término do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:49</div></div>
+<div class="ttc" id="aclassProjeto_html_a1eb1c0d356d0f662ac6fda75ff766004"><div class="ttname"><a href="classProjeto.html#a1eb1c0d356d0f662ac6fda75ff766004">Projeto::getNome</a></div><div class="ttdeci">Nome getNome() const</div><div class="ttdoc">Obtém o nome do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:26</div></div>
+<div class="ttc" id="aclassProjeto_html_a3278bde27423f1ab0027acb3e557cfe7"><div class="ttname"><a href="classProjeto.html#a3278bde27423f1ab0027acb3e557cfe7">Projeto::getTermino</a></div><div class="ttdeci">Timestamp getTermino() const</div><div class="ttdoc">Obtém a data e o horário de término do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:53</div></div>
+<div class="ttc" id="aclassProjeto_html_a4644b46ebb4291e2993a6d811df50dd8"><div class="ttname"><a href="classProjeto.html#a4644b46ebb4291e2993a6d811df50dd8">Projeto::getInicio</a></div><div class="ttdeci">Timestamp getInicio() const</div><div class="ttdoc">Obtém a data e o horário de início do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:44</div></div>
+<div class="ttc" id="aclassProjeto_html_a600487ea6215134c7035454139cfd348"><div class="ttname"><a href="classProjeto.html#a600487ea6215134c7035454139cfd348">Projeto::getDescricao</a></div><div class="ttdeci">Texto getDescricao() const</div><div class="ttdoc">Obtém a descrição do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:35</div></div>
+<div class="ttc" id="aclassProjeto_html_a653d8397857e75322e84fb346f150e37"><div class="ttname"><a href="classProjeto.html#a653d8397857e75322e84fb346f150e37">Projeto::setNome</a></div><div class="ttdeci">void setNome(const Nome &amp;nome)</div><div class="ttdoc">Define o nome do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:22</div></div>
+<div class="ttc" id="aclassProjeto_html_a664b76220e0444b3a74d73211781f1b2"><div class="ttname"><a href="classProjeto.html#a664b76220e0444b3a74d73211781f1b2">Projeto::setIdentificador</a></div><div class="ttdeci">void setIdentificador(const Identificador &amp;identificador)</div><div class="ttdoc">Define o identificador do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:13</div></div>
+<div class="ttc" id="aclassProjeto_html_a73c48a33c8a22c6fea1349184829eaae"><div class="ttname"><a href="classProjeto.html#a73c48a33c8a22c6fea1349184829eaae">Projeto::getIdentificador</a></div><div class="ttdeci">Identificador getIdentificador() const</div><div class="ttdoc">Obtém o identificador do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:17</div></div>
+<div class="ttc" id="aclassProjeto_html_a80646ddf5e0a1da8267bbfb965f88ff6"><div class="ttname"><a href="classProjeto.html#a80646ddf5e0a1da8267bbfb965f88ff6">Projeto::setDescricao</a></div><div class="ttdeci">void setDescricao(const Texto &amp;descricao)</div><div class="ttdoc">Define a descrição do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:31</div></div>
+<div class="ttc" id="aclassProjeto_html_ad33275a0ef457bd4e45c7e1b1ebff2a5"><div class="ttname"><a href="classProjeto.html#ad33275a0ef457bd4e45c7e1b1ebff2a5">Projeto::setInicio</a></div><div class="ttdeci">void setInicio(const Timestamp &amp;inicio)</div><div class="ttdoc">Define a data e o horário de início do projeto.</div><div class="ttdef"><b>Definição</b> entidades.cpp:40</div></div>
+<div class="ttc" id="aclassQuadro_html"><div class="ttname"><a href="classQuadro.html">Quadro</a></div><div class="ttdoc">Entidade Quadro.</div><div class="ttdef"><b>Definição</b> entidades.h:103</div></div>
+<div class="ttc" id="aclassQuadro_html_a260b4f46651e8551028185dc81ca2692"><div class="ttname"><a href="classQuadro.html#a260b4f46651e8551028185dc81ca2692">Quadro::getNome</a></div><div class="ttdeci">Nome getNome() const</div><div class="ttdoc">Obtém o nome do quadro.</div><div class="ttdef"><b>Definição</b> entidades.cpp:73</div></div>
+<div class="ttc" id="aclassQuadro_html_a422b4527e318b8fbb72d1a98a18dc98c"><div class="ttname"><a href="classQuadro.html#a422b4527e318b8fbb72d1a98a18dc98c">Quadro::getIdentificador</a></div><div class="ttdeci">Identificador getIdentificador() const</div><div class="ttdoc">Obtém o identificador do quadro.</div><div class="ttdef"><b>Definição</b> entidades.cpp:65</div></div>
+<div class="ttc" id="aclassQuadro_html_a6cbef16de0378db988fa650249b2b627"><div class="ttname"><a href="classQuadro.html#a6cbef16de0378db988fa650249b2b627">Quadro::setIdentificador</a></div><div class="ttdeci">void setIdentificador(const Identificador &amp;identificador)</div><div class="ttdoc">Define o identificador do quadro (chave primária)</div><div class="ttdef"><b>Definição</b> entidades.cpp:61</div></div>
+<div class="ttc" id="aclassQuadro_html_a7799b0eea6c85113d94d4f231108c354"><div class="ttname"><a href="classQuadro.html#a7799b0eea6c85113d94d4f231108c354">Quadro::getLimite</a></div><div class="ttdeci">Limite getLimite() const</div><div class="ttdoc">Obtém o limite de work in progress do quadro.</div><div class="ttdef"><b>Definição</b> entidades.cpp:81</div></div>
+<div class="ttc" id="aclassQuadro_html_a799d4fe709ede0f7b6f1fb3b3d25d27e"><div class="ttname"><a href="classQuadro.html#a799d4fe709ede0f7b6f1fb3b3d25d27e">Quadro::setNome</a></div><div class="ttdeci">void setNome(const Nome &amp;nome)</div><div class="ttdoc">Define o nome do quadro.</div><div class="ttdef"><b>Definição</b> entidades.cpp:69</div></div>
+<div class="ttc" id="aclassQuadro_html_afb9cc6ac383f0bb2171e54b73b52d4f6"><div class="ttname"><a href="classQuadro.html#afb9cc6ac383f0bb2171e54b73b52d4f6">Quadro::setLimite</a></div><div class="ttdeci">void setLimite(const Limite &amp;limite)</div><div class="ttdoc">Define o limite de work in progress do quadro.</div><div class="ttdef"><b>Definição</b> entidades.cpp:77</div></div>
+<div class="ttc" id="aclassSenha_html"><div class="ttname"><a href="classSenha.html">Senha</a></div><div class="ttdoc">Domínio Senha.</div><div class="ttdef"><b>Definição</b> dominios.h:243</div></div>
+<div class="ttc" id="aclassTamanho_html"><div class="ttname"><a href="classTamanho.html">Tamanho</a></div><div class="ttdoc">Domínio Tamanho.</div><div class="ttdef"><b>Definição</b> dominios.h:194</div></div>
+<div class="ttc" id="aclassTexto_html"><div class="ttname"><a href="classTexto.html">Texto</a></div><div class="ttdoc">Domínio Texto.</div><div class="ttdef"><b>Definição</b> dominios.h:70</div></div>
+<div class="ttc" id="aclassTimestamp_html"><div class="ttname"><a href="classTimestamp.html">Timestamp</a></div><div class="ttdoc">Domínio Timestamp.</div><div class="ttdef"><b>Definição</b> dominios.h:94</div></div>
+<div class="ttc" id="adominios_8h_html"><div class="ttname"><a href="dominios_8h.html">dominios.h</a></div><div class="ttdoc">Declaração das classes de domínio do sistema Kanban.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="Gráfico de Hierarquia de Classes" name="Gráfico de Hierarquia de Classes">
+<area shape="rect" id="Node000000" href="$classIUCartaoDeAtividade.html" title="Interface da apresentacao de cartoes de atividade." alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000001" href="$classCntrIUCartaoDeAtividade.html" title="Controladora de interface de usuario para cartoes de atividade." alt="" coords="212,5,399,31"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="178,15,212,15,212,21,178,21"/>
+</map>
