@@ -19,5 +19,6 @@ Makefile
 # Binários compilados
 *.o
 *.out
-*.exedoxygen_avisos.txt
+*.exe
 doxygen_avisos.txt
+.~lock.*
